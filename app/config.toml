@@ -1,0 +1,12 @@
+base_url = "https://www.sereno.insure"
+
+default_language = "en"
+
+minify_html = true
+compile_sass = true
+build_search_index = false
+
+[markdown]
+highlight_code = true
+
+[extra]
