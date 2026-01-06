@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="attention">
+    <div class="container">
+        {% if section.extra and section.extra.risk %}
+            <h1>A simple way to cover weather {{ section.extra.risk }}</h1>
+        {% else %}
+            <h1>A simple way to cover weather financial risk</h1>
+        {% endif %}
+        
+        <p>The weather parametric insurance made by seasoned meteorologists and weather experts.</p>
+        {% include "partials/cta.html" %}
+    </div>
+    
+    {% include "partials/industry-pills.html" %}
+</section>
+
+<section class="interest">
+    <div class="container">
+        {% if page %}
+            {{ page.content | safe }}
+        {% elif section %}
+            {{ section.content | safe }}
+        {% endif %}
+    </div>
+</section>
+
+<section class="desire">
+    <div class="container">
+        <!-- Differentiation blocks will go here -->
+    </div>
+</section>
+
+<section class="action">
+    <div class="container">
+        <h2>Ready to protect your business?</h2>
+        {% include "partials/cta.html" %}
+    </div>
+</section>
+{% endblock content %}

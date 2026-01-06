@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ config.default_language }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {% if page.title %}
+        <title>{{ page.title }}</title>
+    {% else %}
+        <title>{{ config.title }}</title>
+    {% endif %}
+    
+    {% if page.description %}
+        <meta name="description" content="{{ page.description }}">
+    {% else %}
+        <meta name="description" content="{{ config.description }}">
+    {% endif %}
+    
+    <link rel="stylesheet" href="{{ get_url(path="main.css") }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    {% include "partials/header.html" %}
+    
+    <main>
+        {% block content %}{% endblock content %}
+    </main>
+    
+    {% include "partials/footer.html" %}
+    
+    <script src="{{ get_url(path="main.js") }}"></script>
+</body>
+</html>

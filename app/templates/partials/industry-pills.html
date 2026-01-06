@@ -1,0 +1,31 @@
+<div class="industry-pills">
+    <div class="container">
+        <p class="pills-intro">Looking for industry-specific solutions?</p>
+        
+        <div class="pills-container">
+            <a href="{{ get_url(path="/maritime/") }}" 
+               class="pill pill--industry {% if (page.extra and page.extra.industry == 'maritime') or (section.extra and section.extra.industry == 'maritime') %}pill--active{% endif %}">
+                <span class="pill-icon">🚢</span>
+                <span class="pill-text">Maritime</span>
+            </a>
+            
+            <a href="{{ get_url(path="/construction/") }}" 
+               class="pill pill--industry {% if (page.extra and page.extra.industry == 'construction') or (section.extra and section.extra.industry == 'construction') %}pill--active{% endif %}">
+                <span class="pill-icon">🏗️</span>
+                <span class="pill-text">Construction</span>
+            </a>
+            
+            <a href="{{ get_url(path="/outdoor/") }}" 
+               class="pill pill--industry {% if (page.extra and page.extra.industry == 'outdoor') or (section.extra and section.extra.industry == 'outdoor') %}pill--active{% endif %}">
+                <span class="pill-icon">⛳</span>
+                <span class="pill-text">Outdoor</span>
+            </a>
+            
+            <a href="{{ get_url(path="/mobility/") }}" 
+               class="pill pill--industry {% if (page.extra and page.extra.industry == 'mobility') or (section.extra and section.extra.industry == 'mobility') %}pill--active{% endif %}">
+                <span class="pill-icon">🛴</span>
+                <span class="pill-text">Mobility</span>
+            </a>
+        </div>
+    </div>
+</div>
