@@ -1,0 +1,7 @@
+public/
+lighthouse/
+*.log
+
+.env
+
+.DS_Store
