@@ -15,10 +15,6 @@
   align-items: center;
   justify-content: space-between;
   padding: $spacing-sm 0;
-
-  @media (max-width: $breakpoint-tablet - 1px) {
-    padding: $spacing-xs 0;
-  }
 }
 
 // Brand/Logo
@@ -27,13 +23,14 @@
   .logo {
     display: flex;
     align-items: center;
+    gap: 0.5rem;
+    justify-items: baseline;
   }
 
   .logo-text {
-    font-size: $font-size-h3;
-    font-weight: 700;
+    font-size: $font-size-h2;
+    font-weight: 500;
     color: $primary-brown;
-    padding: 0.25rem;
   }
 }
 
