@@ -15,38 +15,40 @@
   border: 2px solid transparent;
   transition: all $transition-fast;
   text-decoration: none;
-  
-  &:focus {
-    outline: 2px solid $primary-brown;
-    outline-offset: 2px;
-  }
 }
 
-// Primary CTA (from PRD)
 .cta--primary {
-  background: $primary-brown;
+  background: $highlight-brown;
   color: $background-white;
-  border-color: $primary-brown;
-  
+  border-color: $highlight-brown;
+
   &:hover {
-    transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba($primary-brown, 0.3);
     color: $background-white;
   }
-  
+
   &:active {
-    transform: translateY(0);
+    transform: translateY(2px);
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    &:hover {
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
   }
 }
 
-// Secondary CTA (from PRD)
 .cta--secondary {
   background: $background-white;
-  color: $secondary-blue;
-  border-color: $secondary-blue;
-  
+  color: $secondary-icy-blue;
+  border-color: $secondary-icy-blue;
+
   &:hover {
-    background: $secondary-blue;
+    background: $secondary-icy-blue;
     color: $background-white;
   }
 }

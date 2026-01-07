@@ -5,24 +5,26 @@
 
 // Colors
 // ===================================
-$primary-brown: #996633;      // Main brand color, CTAs
-$secondary-blue: #88ffff;     // Icy blue, accents, secondary elements
+$primary-brown: #5c3519; // Main brand color, CTAs
+$highlight-brown: #c87337;
+$secondary-icy-blue: #88ffff; // Icy blue, accents, secondary elements
 
 // Backgrounds
-$background-light: #f5ffff;   // Light frost tint
-$background-white: #ffffff;   // Pure white sections
+$background-light: #f5ffff; // Light frost tint
+$background-white: #ffffff; // Pure white sections
 
 // Text
-$text-primary: #2c2c2c;       // Earthy dark gray
-$text-secondary: #5c5c5c;     // Medium gray
+$text-primary: #2c2c2c; // Earthy dark gray
+$text-secondary: #5c5c5c; // Medium gray
 
 // Utility
-$border-light: #e0e0e0;       // Subtle borders
-$success: #4a9b4a;            // Confirmation states
+$border-light: #e0e0e0; // Subtle borders
+$success: #4a9b4a; // Confirmation states
 
 // Typography
 // ===================================
-$font-primary: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+$font-primary: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  sans-serif;
 
 // Type Scale
 $font-size-h1: 3rem;         // 48px - Hero headings
@@ -36,11 +38,11 @@ $line-height-body: 1.6;
 
 // Spacing System
 // ===================================
-$spacing-xs: 0.5rem;   // 8px
-$spacing-sm: 1rem;     // 16px
-$spacing-md: 2rem;     // 32px
-$spacing-lg: 4rem;     // 64px
-$spacing-xl: 6rem;     // 96px
+$spacing-xs: 0.5rem; // 8px
+$spacing-sm: 1rem; // 16px
+$spacing-md: 2rem; // 32px
+$spacing-lg: 4rem; // 64px
+$spacing-xl: 6rem; // 96px
 
 // Breakpoints (Mobile-First)
 // ===================================

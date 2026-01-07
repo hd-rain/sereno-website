@@ -79,10 +79,9 @@
 // Header CTA
 // ===================================
 .header-cta {
-  @media (max-width: $breakpoint-tablet - 1px) {
-    .cta {
-      padding: $spacing-xs $spacing-sm;
-      font-size: $font-size-small;
-    }
+  .cta {
+    padding: $spacing-xs $spacing-sm;
+    font-size: $font-size-small;
+    white-space: nowrap;
   }
 }
