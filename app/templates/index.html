@@ -3,21 +3,37 @@
 {% block content %}
 <section class="attention">
     <div class="container">
-        <h1>A simple way to cover weather financial risk</h1>
-        <p>The weather parametric insurance made by seasoned meteorologists and weather experts.</p>
-        {% include "partials/cta.html" %}
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>
+                    <span class="hero-line-1">A simple way to cover</span>
+                    <span class="hero-line-2">weather financial risk</span>
+                </h1>
+                <p>The weather parametric insurance made by seasoned meteorologists and weather experts <span
+                        class="highlight">helping
+                        companies to survive financial crisis due to climate-related events.</span></p>
+            </div>
+            <div class="hero-image">
+                <img height="450px" src='{{ get_url(path="images/financial.png") }}'
+                    alt="Weather parametric insurance for European businesses" class="hero-img">
+            </div>
+        </div>
     </div>
-    
+
     {% include "partials/industry-pills.html" %}
 </section>
 
 <section class="interest">
     <div class="container">
         {% if page %}
-            {{ page.content | safe }}
+        {{ page.content | safe }}
         {% elif section %}
-            {{ section.content | safe }}
+        {{ section.content | safe }}
         {% endif %}
+
+        <div class="middle-cta">
+            {% include "partials/cta.html" %}
+        </div>
     </div>
 </section>
 

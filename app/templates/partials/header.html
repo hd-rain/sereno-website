@@ -2,30 +2,31 @@
     <div class="container">
         <div class="header-content">
             <div class="header-brand">
-                <a href="{{ get_url(path="/") }}" class="logo">
-                    <span class="logo-text">Sereno</span>
+                <a href="{{ get_url(path='/') }}" class="logo">
+                    <img width="16px" height="16px" src="{{ get_url(path='images/sereno.png') }}">
+                    <span class="logo-text">SERENO</span>
                 </a>
             </div>
-            
+
             <nav class="header-nav">
-                <a href="{{ get_url(path="/maritime/") }}" 
-                   class="nav-link {% if (page.extra and page.extra.industry == 'maritime') or (section.extra and section.extra.industry == 'maritime') %}active{% endif %}">
+                <a href="{{ get_url(path='/maritime/') }}"
+                    class="nav-link {% if (page.extra and page.extra.industry == 'maritime') or (section.extra and section.extra.industry == 'maritime') %}active{% endif %}">
                     Maritime
                 </a>
-                <a href="{{ get_url(path="/construction/") }}" 
-                   class="nav-link {% if (page.extra and page.extra.industry == 'construction') or (section.extra and section.extra.industry == 'construction') %}active{% endif %}">
+                <a href="{{ get_url(path='/construction/') }}"
+                    class="nav-link {% if (page.extra and page.extra.industry == 'construction') or (section.extra and section.extra.industry == 'construction') %}active{% endif %}">
                     Construction
                 </a>
-                <a href="{{ get_url(path="/outdoor/") }}" 
-                   class="nav-link {% if (page.extra and page.extra.industry == 'outdoor') or (section.extra and section.extra.industry == 'outdoor') %}active{% endif %}">
+                <a href="{{ get_url(path='/outdoor/') }}"
+                    class="nav-link {% if (page.extra and page.extra.industry == 'outdoor') or (section.extra and section.extra.industry == 'outdoor') %}active{% endif %}">
                     Outdoor
                 </a>
-                <a href="{{ get_url(path="/mobility/") }}" 
-                   class="nav-link {% if (page.extra and page.extra.industry == 'mobility') or (section.extra and section.extra.industry == 'mobility') %}active{% endif %}">
+                <a href="{{ get_url(path='/mobility/') }}"
+                    class="nav-link {% if (page.extra and page.extra.industry == 'mobility') or (section.extra and section.extra.industry == 'mobility') %}active{% endif %}">
                     Mobility
                 </a>
             </nav>
-            
+
             <div class="header-cta">
                 {% include "partials/cta.html" %}
             </div>

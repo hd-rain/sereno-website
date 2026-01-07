@@ -1,0 +1,66 @@
+// ===================================
+// Footer Component
+// ===================================
+
+.footer {
+  background-color: $background-light;
+  border-top: 1px solid $border-light;
+  padding: $spacing-md 0;
+  margin-top: auto;
+  
+  .container {
+    text-align: center;
+  }
+}
+
+.footer-line-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: $spacing-xs;
+  margin-bottom: $spacing-sm;
+  font-size: $font-size-small;
+  
+  @media (max-width: $breakpoint-tablet - 1px) {
+    flex-direction: column;
+    gap: $spacing-xs;
+    
+    .separator {
+      display: none;
+    }
+  }
+  
+  a {
+    color: $text-secondary;
+    transition: color $transition-fast;
+    
+    &:hover {
+      color: $primary-brown;
+    }
+  }
+}
+
+.footer-line-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: $spacing-xs;
+  font-size: $font-size-small;
+  color: $text-secondary;
+  
+  @media (max-width: $breakpoint-tablet - 1px) {
+    flex-direction: column;
+    gap: $spacing-xs;
+    
+    .separator {
+      display: none;
+    }
+  }
+}
+
+.separator {
+  color: $text-secondary;
+  user-select: none;
+}

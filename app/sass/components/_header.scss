@@ -1,0 +1,91 @@
+// ===================================
+// Header Component
+// ===================================
+
+.header {
+  background-color: $background-white;
+  border-bottom: 1px solid $border-light;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $spacing-sm 0;
+
+  @media (max-width: $breakpoint-tablet - 1px) {
+    padding: $spacing-xs 0;
+  }
+}
+
+// Brand/Logo
+// ===================================
+.header-brand {
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-text {
+    font-size: $font-size-h3;
+    font-weight: 700;
+    color: $primary-brown;
+    padding: 0.25rem;
+  }
+}
+
+// Navigation
+// ===================================
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: $spacing-md;
+
+  @media (max-width: $breakpoint-tablet - 1px) {
+    display: none; // Hidden on mobile, pills shown below hero instead
+  }
+
+  .nav-link {
+    font-weight: 500;
+    padding: $spacing-xs $spacing-sm;
+    transition: all $transition-fast;
+    position: relative;
+
+    &:hover {
+      color: $primary-brown;
+    }
+
+    &.active {
+      color: $primary-brown;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: $spacing-xs;
+        right: $spacing-xs;
+        height: 2px;
+        background-color: $primary-brown;
+        border-radius: 1px;
+      }
+
+      &:hover {
+        color: $primary-brown;
+      }
+    }
+  }
+}
+
+// Header CTA
+// ===================================
+.header-cta {
+  @media (max-width: $breakpoint-tablet - 1px) {
+    .cta {
+      padding: $spacing-xs $spacing-sm;
+      font-size: $font-size-small;
+    }
+  }
+}

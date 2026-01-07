@@ -1,0 +1,65 @@
+// ===================================
+// Design System Variables
+// Based on PRD Section 5
+// ===================================
+
+// Colors
+// ===================================
+$primary-brown: #996633;      // Main brand color, CTAs
+$secondary-blue: #88ffff;     // Icy blue, accents, secondary elements
+
+// Backgrounds
+$background-light: #f5ffff;   // Light frost tint
+$background-white: #ffffff;   // Pure white sections
+
+// Text
+$text-primary: #2c2c2c;       // Earthy dark gray
+$text-secondary: #5c5c5c;     // Medium gray
+
+// Utility
+$border-light: #e0e0e0;       // Subtle borders
+$success: #4a9b4a;            // Confirmation states
+
+// Typography
+// ===================================
+$font-primary: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+// Type Scale
+$font-size-h1: 3rem;         // 48px - Hero headings
+$font-size-h2: 2rem;         // 32px - Section headings
+$font-size-h3: 1.5rem;       // 24px - Sub-headings
+$font-size-body: 1rem;       // 16px - Body text
+$font-size-small: 0.875rem;  // 14px - Captions, footnotes
+
+$line-height-heading: 1.2;
+$line-height-body: 1.6;
+
+// Spacing System
+// ===================================
+$spacing-xs: 0.5rem;   // 8px
+$spacing-sm: 1rem;     // 16px
+$spacing-md: 2rem;     // 32px
+$spacing-lg: 4rem;     // 64px
+$spacing-xl: 6rem;     // 96px
+
+// Breakpoints (Mobile-First)
+// ===================================
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+// Container
+// ===================================
+$container-max-width: 1200px;
+$container-padding: $spacing-md;
+$container-padding-mobile: $spacing-sm;
+
+// Border Radius
+// ===================================
+$border-radius-sm: 8px;
+$border-radius-md: 12px;
+$border-radius-lg: 20px;
+
+// Transitions
+// ===================================
+$transition-fast: 0.2s ease;
+$transition-medium: 0.3s ease;

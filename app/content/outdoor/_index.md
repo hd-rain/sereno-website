@@ -6,7 +6,9 @@ template = "industry.html"
 [extra]
 industry = "outdoor"
 risk = "losses in the outdoor industry"
-hero_image = "/images/outdoor-hero.jpg"
+hero_image = "/images/outdoor.png"
+hero_sub_heading = "The weather parametric insurance made by seasoned meteorologists and weather experts"
+hero_sub_highlight = "protecting businesses whose performance and future depends on weather."
 +++
 
 ## Outdoor Industry Weather Risks

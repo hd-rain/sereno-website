@@ -1,0 +1,52 @@
+// ===================================
+// Button Components (CTA)
+// ===================================
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-sm $spacing-md;
+  border-radius: $border-radius-sm;
+  font-weight: 600;
+  font-size: $font-size-body;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all $transition-fast;
+  text-decoration: none;
+  
+  &:focus {
+    outline: 2px solid $primary-brown;
+    outline-offset: 2px;
+  }
+}
+
+// Primary CTA (from PRD)
+.cta--primary {
+  background: $primary-brown;
+  color: $background-white;
+  border-color: $primary-brown;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba($primary-brown, 0.3);
+    color: $background-white;
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Secondary CTA (from PRD)
+.cta--secondary {
+  background: $background-white;
+  color: $secondary-blue;
+  border-color: $secondary-blue;
+  
+  &:hover {
+    background: $secondary-blue;
+    color: $background-white;
+  }
+}
