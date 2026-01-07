@@ -42,8 +42,8 @@ h1 {
   font-weight: 700;
   margin-bottom: $spacing-sm;
 
-  @media (max-width: $breakpoint-tablet - 1px) {
-    font-size: 2.5rem; // 40px on mobile
+  @media (min-width: $breakpoint-tablet) {
+    font-size: calc($font-size-h1 * 1.2); // 3rem tablet+
   }
 }
 
@@ -52,10 +52,6 @@ h2 {
   line-height: $line-height-heading;
   font-weight: 600;
   margin-bottom: $spacing-sm;
-
-  @media (max-width: $breakpoint-tablet - 1px) {
-    font-size: 1.75rem; // 28px on mobile
-  }
 }
 
 h3 {
@@ -91,10 +87,10 @@ a {
 .interest,
 .desire,
 .action {
-  padding: $spacing-lg 0;
+  padding: $spacing-md 0;
 
-  @media (max-width: $breakpoint-tablet - 1px) {
-    padding: $spacing-md 0;
+  @media (min-width: $breakpoint-tablet) {
+    padding: $spacing-lg 0;
   }
 }
 
@@ -141,7 +137,7 @@ a {
 
     .hero-line-2 {
       display: block;
-      color: $primary-brown;
+      color: $highlight-brown;
       font-weight: 700;
     }
   }
@@ -157,18 +153,18 @@ a {
   }
 
   .highlight {
-    color: $primary-brown;
+    color: $highlight-brown;
     font-weight: 700;
   }
 }
 
 .hero-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
 
-  @media (max-width: $breakpoint-tablet - 1px) {
-    order: -1; // Show image first on mobile
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 

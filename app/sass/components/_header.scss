@@ -37,12 +37,16 @@
 // Navigation
 // ===================================
 .header-nav {
-  display: flex;
-  align-items: center;
-  gap: $spacing-md;
+  display: none;
 
-  @media (max-width: $breakpoint-tablet - 1px) {
-    display: none; // Hidden on mobile, pills shown below hero instead
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+    align-items: center;
+    gap: $spacing-xs;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    gap: $spacing-md;
   }
 
   .nav-link {
@@ -53,10 +57,12 @@
 
     &:hover {
       color: $primary-brown;
+      transform: translateY(-1px);
     }
 
     &.active {
       color: $primary-brown;
+      transform: translateY(0);
 
       &::after {
         content: "";
