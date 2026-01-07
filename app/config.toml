@@ -1,6 +1,6 @@
 base_url = "https://www.sereno.insure"
 
-title = "Sereno - Weather Parametric Insurance for European Businesses"
+title = "Sereno - Weather Parametric Insurance"
 description = "Fast, transparent parametric insurance covering weather-related business disruptions. Built by meteorologists for SMEs across Europe."
 
 default_language = "en"
@@ -22,4 +22,4 @@ external_links_no_referrer = true
 
 [extra]
 author = "Sereno"
-keywords = "weather insurance, parametric insurance, Europe, meteorologists, SME"
+keywords = " parametric weather insurance, weather risk insurance, weather protection, meteorological insurance, weather-sensibility protection, European business insurance, maritime insurance, construction insurance, outdoor events insurance, mobility insurance, climate-related financial protection"
