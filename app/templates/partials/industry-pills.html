@@ -5,25 +5,29 @@
         <div class="pills-container">
             <a href="{{ get_url(path='/maritime/') }}"
                 class="pill pill--industry {% if (page.extra and page.extra.industry == 'maritime') or (section.extra and section.extra.industry == 'maritime') %}pill--active{% endif %}">
-                <span class="pill-icon"><img src="{{ get_url(path='images/maritime-highlight.svg')}}"></span>
+                <span class="pill-icon"><img src="{{ get_url(path='images/maritime-icon.svg')}}" alt="a ship
+                        icon" width="24px" height="24px"></span>
                 <span class="pill-text">Maritime</span>
             </a>
 
             <a href="{{ get_url(path='/construction/') }}"
                 class="pill pill--industry {% if (page.extra and page.extra.industry == 'construction') or (section.extra and section.extra.industry == 'construction') %}pill--active{% endif %}">
-                <span class="pill-icon"><img src="{{ get_url(path='images/construction-highlight.svg')}}"></span>
+                <span class="pill-icon"><img src="{{ get_url(path='images/construction-icon.svg')}}" alt="a construction
+                        icon" width="24px" height="24px"></span>
                 <span class="pill-text">Construction</span>
             </a>
 
-            <a href="{{ get_url(path='/outdoor/') }}"
-                class="pill pill--industry {% if (page.extra and page.extra.industry == 'outdoor') or (section.extra and section.extra.industry == 'outdoor') %}pill--active{% endif %}">
-                <span class="pill-icon"><img src="{{ get_url(path='images/outdoor-highlight.svg')}}"></span>
-                <span class="pill-text">Outdoor</span>
+            <a href="{{ get_url(path='/outdoors/') }}"
+                class="pill pill--industry {% if (page.extra and page.extra.industry == 'outdoors') or (section.extra and section.extra.industry == 'outdoors') %}pill--active{% endif %}">
+                <span class="pill-icon"><img src="{{ get_url(path='images/outdoors-icon.svg')}}" alt="a tree
+                        icon" width="24px" height="24px"></span>
+                <span class="pill-text">Outdoors</span>
             </a>
 
             <a href="{{ get_url(path='/mobility/') }}"
                 class="pill pill--industry {% if (page.extra and page.extra.industry == 'mobility') or (section.extra and section.extra.industry == 'mobility') %}pill--active{% endif %}">
-                <span class="pill-icon"><img src="{{ get_url(path='images/mobility-highlight.svg')}}"></span>
+                <span class="pill-icon"><img src="{{ get_url(path='images/mobility-icon.svg')}}" alt="a scooter
+                        icon" width="24px" height="24px"></span>
                 <span class="pill-text">Mobility</span>
             </a>
         </div>

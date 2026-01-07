@@ -6,7 +6,7 @@ template = "industry.html"
 [extra]
 industry = "maritime"
 risk = "delays and costs at sea"
-hero_image = "/images/maritime.png"
+hero_image = "/images/maritime.webp"
 hero_sub_heading = "The weather parametric insurance made by seasoned meteorologists and weather experts."
 hero_sub_highlight = "Covering delays and operational disruptions in shipping operations."
 +++

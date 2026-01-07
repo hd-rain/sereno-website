@@ -114,15 +114,15 @@ a {
 // Hero Section
 // ===================================
 .hero-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: $spacing-lg;
-  align-items: center;
+  grid-template-columns: 1fr;
+  gap: $spacing-md;
+  text-align: center;
 
-  @media (max-width: $breakpoint-tablet - 1px) {
-    grid-template-columns: 1fr;
-    gap: $spacing-md;
-    text-align: center;
+  @media (min-width: $breakpoint-tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $spacing-lg;
+    align-items: center;
   }
 }
 
@@ -137,7 +137,11 @@ a {
 
     .hero-line-2 {
       display: block;
-      background: linear-gradient(135deg, $primary-brown 0%, $highlight-brown 100%);
+      background: linear-gradient(
+        135deg,
+        $primary-brown 0%,
+        $highlight-brown 100%
+      );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -149,16 +153,25 @@ a {
   p {
     margin-bottom: 0;
     color: $text-secondary;
-    font-size: 1.125rem;
+    font-size: $font-size-body;
 
-    @media (max-width: $breakpoint-tablet - 1px) {
-      font-size: $font-size-body;
+    @media (min-width: $breakpoint-tablet) {
+      font-size: calc($font-size-body * 1.2);
     }
   }
 
   .highlight {
-    color: $highlight-brown;
+    display: block;
+    background: linear-gradient(
+      135deg,
+      $primary-brown 0%,
+      $highlight-brown 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-weight: 700;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 }
 

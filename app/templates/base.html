@@ -1,35 +1,65 @@
 <!DOCTYPE html>
 <html lang="{{ config.default_language }}">
+
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     {% if page.title %}
-        <title>{{ page.title }}</title>
+    <title>{{ page.title }}</title>
     {% else %}
-        <title>{{ config.title }}</title>
+    <title>{{ config.title }}</title>
     {% endif %}
-    
+
     {% if page.description %}
-        <meta name="description" content="{{ page.description }}">
+    <meta name="description" content="{{ page.description }}">
     {% else %}
-        <meta name="description" content="{{ config.description }}">
+    <meta name="description" content="{{ config.description }}">
     {% endif %}
-    
-    <link rel="stylesheet" href="{{ get_url(path="main.css") }}">
+    <meta name="author" content="Sereno ©">
+    <meta name="keywords" content="parametric weather insurance">
+
+    <link rel="canonical" href="{{ current_url | safe }}">
+
+    <meta property="og:type" content="{% block og_type %}website{% endblock %}">
+    <meta property="og:url" content="{{ current_url | safe }}">
+    {% if page.title %}
+    <meta property="og:title" content="{% block og_title %}{{ page.title }}{% endblock %}">
+    <meta property="og:site_name" content="{{ page.title }}">
+    {% else %}
+    <meta property="og:title" content="{% block og_title %}{{ config.title }}{% endblock %}">
+    <meta property="og:site_name" content="{{ config.title }}">
+    {% endif %}
+
+    {% if page.description %}
+    <meta property="og:description" content="{% block og_description %}{{ page.description }}{% endblock %}">
+    {% else %}
+    <meta property="og:description" content="{% block og_description %}{{ config.description }}{% endblock %}">
+    {% endif %}
+    <meta property="og:image" content="{% block og_image %}{{ get_url(path='images/financial.png') }}{% endblock %}">
+    <meta property="og:locale" content="en_US">
+
+
+    <link rel="stylesheet" href="{{ get_url(path='main.css') }}">
+    <link rel="icon" href="{{ get_url(path='favicon.ico') }}" type="image/x-icon">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     {% include "partials/header.html" %}
-    
+
     <main>
         {% block content %}{% endblock content %}
     </main>
-    
+
     {% include "partials/footer.html" %}
-    
-    <script src="{{ get_url(path="main.js") }}"></script>
+
+    <script src="{{ get_url(path='main.js') }}"></script>
 </body>
+
 </html>

@@ -6,7 +6,7 @@ template = "industry.html"
 [extra]
 industry = "mobility"
 risk = "impacts in mobility"
-hero_image = "/images/mobility.png"
+hero_image = "/images/mobility.webp"
 hero_sub_heading = "The weather parametric insurance made by seasoned meteorologists and weather experts."
 hero_sub_highlight = "Reducing weather-driven disruptions to fleet availability and operations."
 +++

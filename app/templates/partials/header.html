@@ -3,7 +3,8 @@
         <div class="header-content">
             <div class="header-brand">
                 <a href="{{ get_url(path='/') }}" class="logo">
-                    <img width="18px" height="24px" src="{{ get_url(path='images/sereno-highlight.png') }}">
+                    <img width="20px" height="24px" src="{{ get_url(path='images/sereno.webp') }}"
+                        alt="the logo of sereno, representing a ship stucked in a channel with two parallel bars and an oblique in the middle">
                     <span class="logo-text">sereno</span>
                 </a>
             </div>
@@ -17,9 +18,9 @@
                     class="nav-link {% if (page.extra and page.extra.industry == 'construction') or (section.extra and section.extra.industry == 'construction') %}active{% endif %}">
                     Construction
                 </a>
-                <a href="{{ get_url(path='/outdoor/') }}"
-                    class="nav-link {% if (page.extra and page.extra.industry == 'outdoor') or (section.extra and section.extra.industry == 'outdoor') %}active{% endif %}">
-                    Outdoor
+                <a href="{{ get_url(path='/outdoors/') }}"
+                    class="nav-link {% if (page.extra and page.extra.industry == 'outdoors') or (section.extra and section.extra.industry == 'outdoors') %}active{% endif %}">
+                    Outdoors
                 </a>
                 <a href="{{ get_url(path='/mobility/') }}"
                     class="nav-link {% if (page.extra and page.extra.industry == 'mobility') or (section.extra and section.extra.industry == 'mobility') %}active{% endif %}">
