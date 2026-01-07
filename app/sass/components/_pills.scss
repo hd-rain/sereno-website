@@ -16,29 +16,27 @@
 .pills-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: $spacing-sm;
-  flex-wrap: wrap;
-  
-  @media (max-width: $breakpoint-tablet - 1px) {
-    // Mobile: horizontal scroll instead of wrap
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding: 0 $spacing-sm;
-    gap: $spacing-xs;
-    
-    // Hide scrollbar
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    
-    &::-webkit-scrollbar {
-      display: none;
-    }
+  justify-content: flex-start;
+  gap: $spacing-xs;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 0 $spacing-sm;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  scroll-snap-type: x mandatory;
+
+  @media (min-width: $breakpoint-tablet) {
+    justify-content: center;
+    gap: $spacing-sm;
   }
 }
 
-// Pill Component (from PRD)
 .pill {
   display: inline-flex;
   align-items: center;
@@ -50,30 +48,28 @@
   text-decoration: none;
   transition: all $transition-fast;
   white-space: nowrap;
-  
-  @media (max-width: $breakpoint-tablet - 1px) {
-    flex-shrink: 0; // Prevent shrinking in mobile scroll
-  }
+  scroll-snap-align: center;
+  flex-shrink: 0;
 }
 
 .pill--industry {
-  border: 1px solid lighten($primary-brown, 20%);
+  border: 1px solid $primary-brown;
   color: $primary-brown;
   background: $background-white;
-  
+
   &:hover {
-    background: lighten($primary-brown, 20%);
+    background: $primary-brown;
     color: $background-white;
     transform: scale(1.05);
   }
-  
+
   &.pill--active {
-    background: lighten($primary-brown, 20%);
+    background: $primary-brown;
     color: $background-white;
-    border-color: lighten($primary-brown, 20%);
-    
+    border-color: $primary-brown;
+
     &:hover {
-      background: lighten($primary-brown, 20%);
+      background: $primary-brown;
       color: $background-white;
       transform: none;
     }
