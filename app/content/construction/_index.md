@@ -7,8 +7,8 @@ template = "industry.html"
 industry = "construction"
 risk = "disruption in construction"
 hero_image = "/images/construction.png"
-hero_sub_heading = "The weather parametric insurance made by seasoned meteorologists and weather experts"
-hero_sub_highlight = "designing and offering tailored coverages aligned with how construction businesses actually operate."
+hero_sub_heading = "The weather parametric insurance made by seasoned meteorologists and weather experts."
+hero_sub_highlight = "Tailoring coverage to each construction site's specific weather exposure."
 +++
 
 ## Construction Weather Challenges

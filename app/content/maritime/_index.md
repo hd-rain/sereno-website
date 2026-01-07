@@ -5,10 +5,10 @@ template = "industry.html"
 
 [extra]
 industry = "maritime"
-risk = "delay at sea"
+risk = "delays and costs at sea"
 hero_image = "/images/maritime.png"
-hero_sub_heading = "The weather parametric insurance made by seasoned meteorologists and weather experts"
-hero_sub_highlight = "mitigating the huge impact of delays and costs on shiping industriy due to weather and climate-related events."
+hero_sub_heading = "The weather parametric insurance made by seasoned meteorologists and weather experts."
+hero_sub_highlight = "Covering delays and operational disruptions in shipping operations."
 +++
 
 ## Industry-Specific Social Proof
