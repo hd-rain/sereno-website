@@ -1,20 +1,16 @@
 +++
-title = "Weather Parametric Insurance for European Businesses | Sereno"
+title = "Sereno - Weather Parametric Insurance"
 description = "Fast, transparent parametric insurance covering weather-related business disruptions. Built by meteorologists for SMEs across Europe."
 +++
 
-## Social Proof Content
+## Financial and Business Weather Impact
 
-Weather disrupts €450B of European business annually. Traditional insurance covers catastrophes. We cover Tuesday.
+The climate accelerates its changes resulting in weather unpredictibility and extrem events. Every businesses will be impacted by weather and encounter looses. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-### Backed by A-rated insurers
+### Weather Impact on SME
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placeholder for insurer logos and backing information.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-### Trusted by brokers across Europe
+### SME Parametric Insurance Solutions
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Working with brokers across European markets.
-
-### Regulatory Credibility
-
-Operating under French insurance regulations. Partnering with A-rated European insurers.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

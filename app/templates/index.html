@@ -25,11 +25,11 @@
 
 <section class="interest">
     <div class="container">
-        {% if page %}
-        {{ page.content | safe }}
-        {% elif section %}
-        {{ section.content | safe }}
-        {% endif %}
+        {% include "partials/hook.html" %}
+
+        {% include "partials/partners.html" %}
+
+        {% include "partials/testimonials.html" %}
 
         <div class="middle-cta">
             {% include "partials/cta.html" %}
@@ -39,7 +39,11 @@
 
 <section class="desire">
     <div class="container">
-        <!-- Differentiation blocks will go here -->
+        {% if page %}
+        {{ page.content | safe }}
+        {% elif section %}
+        {{ section.content | safe }}
+        {% endif %}
     </div>
 </section>
 

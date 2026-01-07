@@ -1,5 +1,5 @@
 +++
-title = "Maritime Weather Insurance | Sereno"
+title = "Sereno - Weather Parametric Insurance for Maritime"
 description = "Protect shipping operations from weather delays at sea. Parametric insurance with fast payouts based on verified weather data."
 template = "industry.html"
 
@@ -9,9 +9,19 @@ risk = "delays and costs at sea"
 hero_image = "/images/maritime.webp"
 hero_sub_heading = "The weather parametric insurance made by seasoned meteorologists and weather experts."
 hero_sub_highlight = "Covering delays and operational disruptions in shipping operations."
+
+[[extra.testimonials]]
+name = "John Doe"
+quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+role = "Risk Manager"
+
+[[extra.testimonials]]
+name = "John Doe"
+quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+role = "Supply Chain Manager"
 +++
 
-## Industry-Specific Social Proof
+## Maritime Weather Challenges
 
 Maritime operations face unique weather challenges. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 

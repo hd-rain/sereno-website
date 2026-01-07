@@ -1,0 +1,35 @@
+<div class="testimonials">
+    <h3>A trusted partner for brokers</h3>
+    <p>Traditional markets are hardening. Empower your portfolio with parametric solutions that close coverage gaps and
+        differentiate your offering.</p>
+
+    <div class="testimonials-track">
+        {% if section.extra.testimonials %}
+        {% for testimonial in section.extra.testimonials %}
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <div class="testimonial-avatar">
+                    <div class="avatar-placeholder"></div>
+                </div>
+                <div class="testimonial-name">{{ testimonial.name }}</div>
+                <blockquote class="testimonial-quote">"{{ testimonial.quote }}"</blockquote>
+                <div class="testimonial-role">{{ testimonial.role }}</div>
+            </div>
+        </div>
+        {% endfor %}
+        {% elif config.extra.testimonials_financial %}
+        {% for testimonial in config.extra.testimonials_financial %}
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <div class="testimonial-avatar">
+                    <div class="avatar-placeholder"></div>
+                </div>
+                <div class="testimonial-name">{{ testimonial.name }}</div>
+                <blockquote class="testimonial-quote">"{{ testimonial.quote }}"</blockquote>
+                <div class="testimonial-role">{{ testimonial.role }}</div>
+            </div>
+        </div>
+        {% endfor %}
+        {% endif %}
+    </div>
+</div>

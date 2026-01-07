@@ -1,5 +1,5 @@
 +++
-title = "Mobility Weather Insurance | Sereno"
+title = "Sereno - Weather Parametric Insurance for Mobility"
 description = "Protect mobility services from weather impacts. Parametric insurance with fast payouts based on verified weather data."
 template = "industry.html"
 
@@ -9,6 +9,11 @@ risk = "impacts in mobility"
 hero_image = "/images/mobility.webp"
 hero_sub_heading = "The weather parametric insurance made by seasoned meteorologists and weather experts."
 hero_sub_highlight = "Reducing weather-driven disruptions to fleet availability and operations."
+
+[[extra.testimonials]]
+name = "John Doe"
+quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+role = "Site Ops"
 +++
 
 ## Mobility and Weather Dependencies

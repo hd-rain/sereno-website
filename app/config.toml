@@ -23,3 +23,19 @@ external_links_no_referrer = true
 [extra]
 author = "Sereno"
 keywords = " parametric weather insurance, weather risk insurance, weather protection, meteorological insurance, weather-sensibility protection, European business insurance, maritime insurance, construction insurance, outdoor events insurance, mobility insurance, climate-related financial protection"
+
+# Insurer logos placeholders for social proof
+partners_logos = [
+    { shape = "rectangle", width = 120, height = 60 },
+    { shape = "rectangle", width = 120, height = 60 },
+    { shape = "rectangle", width = 120, height = 60 },
+    { shape = "rectangle", width = 120, height = 60 },
+    { shape = "rectangle", width = 120, height = 60 },
+]
+
+# Testimonials for financial (homepage) - reusing industry roles
+testimonials_financial = [
+    { name = "John Doe", quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", role = "Broker FR" },
+    { name = "John Doe", quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", role = "Broker UK" },
+    { name = "John Doe", quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", role = "Supply Chain Manager" }
+]
