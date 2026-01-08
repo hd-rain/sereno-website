@@ -1,10 +1,10 @@
+{% if partners_type == "insurer" %}
 <div class="partners">
     <h3>Backed by A rated insurers</h3>
-    <p>Sereno operates as a Managing General Agent (MGA). This means you get the best of both worlds: our cutting-edge
-        parametric technology and speed, backed by the financial solidity of tier-1 global insurers.</p>
+    <p>Sereno operates as a Managing General Agent (MGA). This means you get the best of both worlds: our cutting-edge parametric technology and speed, backed by the financial solidity of tier-1 global insurers.</p>
     <div class="logos-container">
         <div class="logos-wrapper">
-            {% for logo in config.extra.partners_logos %}
+            {% for logo in config.extra.insurer_logos %}
             <div class="logo-placeholder logo--{{ logo.shape }}"
                 style="width: {{ logo.width }}px; height: {{ logo.height }}px;">
                 <span class="logo-text">Logo</span>
@@ -12,7 +12,7 @@
             {% endfor %}
         </div>
         <div class="logos-wrapper">
-            {% for logo in config.extra.partners_logos %}
+            {% for logo in config.extra.insurer_logos %}
             <div class="logo-placeholder logo--{{ logo.shape }}"
                 style="width: {{ logo.width }}px; height: {{ logo.height }}px;">
                 <span class="logo-text">Logo</span>
@@ -21,3 +21,27 @@
         </div>
     </div>
 </div>
+{% elif partners_type == "broker" %}
+<div class="partners">
+    <h3>Trusted by leading brokers</h3>
+    <p>Traditional markets are hardening. Empower your portfolio with parametric solutions that close coverage gaps and differentiate your offering.</p>
+    <div class="logos-container">
+        <div class="logos-wrapper">
+            {% for logo in config.extra.broker_logos %}
+            <div class="logo-placeholder logo--{{ logo.shape }}"
+                style="width: {{ logo.width }}px; height: {{ logo.height }}px;">
+                <span class="logo-text">Logo</span>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="logos-wrapper">
+            {% for logo in config.extra.broker_logos %}
+            <div class="logo-placeholder logo--{{ logo.shape }}"
+                style="width: {{ logo.width }}px; height: {{ logo.height }}px;">
+                <span class="logo-text">Logo</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}

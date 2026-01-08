@@ -27,10 +27,13 @@
     <div class="container">
         {% include "partials/hook.html" %}
 
+        {% set_global partners_type = "insurer" %}
         {% include "partials/partners.html" %}
 
-        {% include "partials/testimonials.html" %}
+        {% set_global partners_type = "broker" %}
+        {% include "partials/partners.html" %}
 
+        <!-- {% include "partials/testimonials.html" %} -->
         <div class="middle-cta">
             {% include "partials/cta.html" %}
         </div>

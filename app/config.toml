@@ -25,7 +25,16 @@ author = "Sereno"
 keywords = " parametric weather insurance, weather risk insurance, weather protection, meteorological insurance, weather-sensibility protection, European business insurance, maritime insurance, construction insurance, outdoor events insurance, mobility insurance, climate-related financial protection"
 
 # Insurer logos placeholders for social proof
-partners_logos = [
+insurer_logos = [
+    { shape = "rectangle", width = 120, height = 60 },
+    { shape = "rectangle", width = 120, height = 60 },
+    { shape = "rectangle", width = 120, height = 60 },
+    { shape = "rectangle", width = 120, height = 60 },
+    { shape = "rectangle", width = 120, height = 60 },
+]
+
+# Broker logos placeholders for social proof  
+broker_logos = [
     { shape = "rectangle", width = 120, height = 60 },
     { shape = "rectangle", width = 120, height = 60 },
     { shape = "rectangle", width = 120, height = 60 },
