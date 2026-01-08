@@ -1,7 +1,9 @@
 <div class="testimonials">
-    <h3>A trusted partner for brokers</h3>
-    <p>Traditional markets are hardening. Empower your portfolio with parametric solutions that close coverage gaps and
-        differentiate your offering.</p>
+    <h3>When weather stops revenue, your costs keep running</h3>
+    <p>
+        Rent, salaries, equipment—expenses continue while operations halt. Payment within days—no claims disputes, no
+        months of waiting as costs pile up.
+    </p>
 
     <div class="testimonials-track">
         {% if section.extra.testimonials %}
@@ -9,7 +11,7 @@
         <div class="testimonial">
             <div class="testimonial-content">
                 <div class="testimonial-avatar">
-                    <div class="avatar-placeholder"></div>
+                    <img src="{{ get_url(path='images/testimonial.svg') }}" alt="Testimonial" width="24" height="24">
                 </div>
                 <div class="testimonial-name">{{ testimonial.name }}</div>
                 <blockquote class="testimonial-quote">"{{ testimonial.quote }}"</blockquote>
@@ -22,7 +24,7 @@
         <div class="testimonial">
             <div class="testimonial-content">
                 <div class="testimonial-avatar">
-                    <div class="avatar-placeholder"></div>
+                    <img src="{{ get_url(path='images/testimonial.svg') }}" alt="Testimonial" width="24" height="24">
                 </div>
                 <div class="testimonial-name">{{ testimonial.name }}</div>
                 <blockquote class="testimonial-quote">"{{ testimonial.quote }}"</blockquote>

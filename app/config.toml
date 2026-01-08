@@ -44,7 +44,7 @@ broker_logos = [
 
 # Testimonials for financial (homepage) - reusing industry roles
 testimonials_financial = [
-    { name = "John Doe", quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", role = "Broker FR" },
-    { name = "John Doe", quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", role = "Broker UK" },
+    { name = "John Doe", quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", role = "Ops. Risk Manager" },
+    { name = "John Doe", quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", role = "Business Owner" },
     { name = "John Doe", quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", role = "Supply Chain Manager" }
 ]
