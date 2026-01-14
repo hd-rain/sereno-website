@@ -125,6 +125,8 @@ a {
     grid-template-columns: 1fr 1fr;
     gap: $spacing-lg;
     align-items: center;
+    text-align: start;
+    padding-left: $spacing-lg;
   }
 }
 
