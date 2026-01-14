@@ -4,9 +4,9 @@ description = "Protect outdoor events and activities from weather losses. Parame
 template = "industry.html"
 
 [extra]
-industry = "outdoors"
-risk = "losses in the outdoors"
-hero_image = "/images/outdoors.webp"
+industry = "outdoor_industry"
+risk = "losses in outdoor industry"
+hero_image = "/images/outdoor_industry.webp"
 hero_sub_heading = "The weather parametric insurance made by seasoned meteorologists and weather experts."
 hero_sub_highlight = "Protecting businesses whose revenue depends on favorable weather conditions."
 

@@ -123,10 +123,10 @@ a {
   @media (min-width: $breakpoint-tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-left: $spacing-lg;
     gap: $spacing-lg;
     align-items: center;
     text-align: start;
-    padding-left: $spacing-lg;
   }
 }
 
