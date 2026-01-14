@@ -4,11 +4,9 @@
 <section class="page-content">
     <div class="container">
         {% if page %}
-            <h1>{{ page.title }}</h1>
-            {{ page.content | safe }}
+        {{ page.content | safe }}
         {% elif section %}
-            <h1>{{ section.title }}</h1>
-            {{ section.content | safe }}
+        {{ section.content | safe }}
         {% endif %}
     </div>
 </section>
