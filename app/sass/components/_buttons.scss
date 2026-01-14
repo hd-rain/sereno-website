@@ -6,10 +6,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: $spacing-sm $spacing-md;
-  border-radius: $border-radius-sm;
+  white-space: nowrap;
+
+  padding: $spacing-xs $spacing-sm;
+  border-radius: $border-radius-lg;
   font-weight: 600;
-  font-size: $font-size-body;
+  font-size: $font-size-small;
   text-align: center;
   cursor: pointer;
   border: 2px solid transparent;
@@ -19,12 +21,12 @@
 }
 
 .cta--primary {
-  background: $primary-brown;
-  color: $background-white;
-  border-color: $primary-brown;
+  background: $highlight-brown;
+  color: $secondary-light;
+  border-color: $highlight-brown;
 
   &:hover {
-    box-shadow: 0 4px 12px rgba($primary-brown, 0.3);
+    box-shadow: 0 4px 12px rgba($highlight-brown, 0.3);
     color: $background-white;
   }
 

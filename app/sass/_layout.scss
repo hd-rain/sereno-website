@@ -52,7 +52,9 @@ h2 {
   margin-bottom: $spacing-sm;
 
   @media (min-width: $breakpoint-tablet) {
-    text-align: left;
+    &:not(.cta-last-chance) {
+      text-align: left;
+    }
   }
 }
 

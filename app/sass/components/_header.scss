@@ -322,10 +322,4 @@
 .header-cta {
   position: relative;
   z-index: $z-cta;
-
-  .cta {
-    padding: $spacing-xs $spacing-sm;
-    font-size: $font-size-small;
-    white-space: nowrap;
-  }
 }
