@@ -5,18 +5,10 @@
     <div class="container">
         <div class="hero-content">
             <div class="hero-text">
-                {% if section.extra and section.extra.risk %}
                 <h1>
                     <span class="hero-line-1">A simple way to cover</span>
                     <span class="hero-line-2">weather {{ section.extra.risk }}</span>
                 </h1>
-                {% else %}
-                <h1>
-                    <span class="hero-line-1">A simple way to cover</span>
-                    <span class="hero-line-2">weather financial risk</span>
-                </h1>
-                {% endif %}
-
                 <p>{{section.extra.hero_sub_heading}}</p>
             </div>
             <div class="hero-image">
@@ -29,25 +21,19 @@
 
 </section>◊
 
-<section class="interest">
-    <div class="container">
-
-    </div>
-</section>
+<!-- <section class="interest"></section> -->
 
 <section class="desire">
-    <div class="container">
-        {% if page %}
-        {{ page.content | safe }}
-        {% elif section %}
-        {{ section.content | safe }}
-        {% endif %}
-    </div>
+    {% if page %}
+    {{ page.content | safe }}
+    {% elif section %}
+    {{ section.content | safe }}
+    {% endif %}
 </section>
 
 <section class="action">
     <div class="container">
-        <h2>Ready to protect your business?</h2>
+        <h2 class="cta-last-chance">Ready to protect your clients?</h2>
         {% include "partials/cta.html" %}
     </div>
 </section>
