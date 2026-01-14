@@ -1,0 +1,21 @@
+// ===================================
+// Section Background Shortcodes
+// ===================================
+
+.section-bg-white {
+  background-color: $background-white;
+  padding: $spacing-md 0;
+  
+  &:first-of-type {
+    padding-top: 0;
+  }
+}
+
+.section-bg-light {
+  background: $background-light;
+  padding: $spacing-md 0;
+  
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+}

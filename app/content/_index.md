@@ -3,14 +3,93 @@ title = "Sereno - Weather Parametric Insurance"
 description = "Fast, transparent parametric insurance covering weather-related business disruptions. Built by meteorologists for SMEs across Europe."
 +++
 
-## Financial and Business Weather Impact
+{% section_white() %}
 
-The climate accelerates its changes resulting in weather unpredictibility and extrem events. Every businesses will be impacted by weather and encounter looses. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+## A trusted partner for brokers
 
-### Weather Impact on SME
+{% features_grid() %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+{% feature_card(title="Solid", subtitle="Strong capacity behind us.") %}
+Robust, transparent, and designed for long‑term reliability. We operate as an MGA with committed, highly rated insurance partners.
+{% end %}
 
-### SME Parametric Insurance Solutions
+{% feature_card(title="Simple", subtitle="Speed without friction.") %}
+Easy to explain, fast to place and ready to deploy. Clear coverage, objective triggers, and automated payouts from quote to settlement.
+{% end %}
 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+{% feature_card(title="Innovative", subtitle="Unlock uninsured protection gaps.") %}
+Our parametric approach closes previously uninsurable or under‑insured protection gaps with data‑driven precision.
+{% end %}
+
+{% feature_card(title="Flexible", subtitle="Adaptive and tailored.") %}
+Modular structures, adjustable limits, and scalable capacity to complement existing programs and meet real clients needs.
+{% end %}
+{% end %}
+{% end %}
+
+{% section_light() %}
+
+## Empower your clients’ financial resilience
+
+_Climate events don’t just cause damage. They disrupt revenue, margins, and liquidity._
+
+Designed to complement traditional insurance, Sereno’s parametric solutions are built to provide :
+
+- Immediate liquidity following a qualifying event
+- Payouts based on objective triggers, no loss adjustment process
+- Predictable protection to stabilize cash flow and earnings
+
+When disruption hits, your clients get certainty when it matters most.
+{% end %}
+
+{% section_white() %}
+
+## Unique weather data expertise
+
+_Reducing basis risk with superior data and proven expertise._
+
+Historical data is no longer enough. Our proprietary algorithms account for climate change trends to price your risk fairly for tomorrow, not yesterday.We don't only rely on generic airport weather stations. We fuse satellite imagery, radar, and IoT sensors to model risk exactly where your assets are.
+
+Backed by a team of experienced meteorologists and climate scientists who continuously validate assumptions, refine models, and ensure scientific rigor at every step.The gap between "weather at the station" and "weather at your site" costs you money. We close that gap.
+
+![A raster image](/images/experts.webp)
+{% end %}
+
+{% section_light() %}
+
+## Tech add value for your customers
+
+### Proactive alerts for your clients
+
+Stay ahead of climate events.
+We monitor weather conditions in real time and send alerts:
+When a relevant event is forecasted
+As conditions evolve toward predefined thresholds
+When thresholds are reached or exceeded
+You can inform your clients early and act before impacts materialize.
+
+### Client‑specific triggers
+
+No generic assumptions.
+Triggers are designed using your clients’ own exposure data.Thresholds are calibrated to real locations, assets, and risk profiles, ensuring a clear link between:
+
+- The weather event
+- The trigger
+- The client’s financial exposure
+
+This precision reduces basis risk and builds trust.
+
+### Portfolio‑level monitoring
+
+See the bigger picture.
+The platform gives you a clear view across your portfolio:
+
+- Active covers and limits
+- Exposure by region or peril
+- Events in progress and potential payouts
+
+You gain visibility to support better advice, stronger renewals, and more strategic conversations.
+
+![A screenshot of risk assessment from our platform](/images/assessment.webp)
+![A screenshot of risk monitoring from our platform](/images/monitoring.webp)
+{% end %}
