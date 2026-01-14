@@ -44,6 +44,8 @@ When disruption hits, your clients get certainty when it matters most.
 
 {% section_white() %}
 
+{% content_with_image(image="/images/experts.webp", alt="A painting by susan wilkinson representing a raster weather data picture") %}
+
 ## Unique weather data expertise
 
 _Reducing basis risk with superior data and proven expertise._
@@ -52,36 +54,18 @@ Historical data is no longer enough. Our proprietary algorithms account for clim
 
 Backed by a team of experienced meteorologists and climate scientists who continuously validate assumptions, refine models, and ensure scientific rigor at every step.The gap between "weather at the station" and "weather at your site" costs you money. We close that gap.
 
-![A raster image](/images/experts.webp)
+{% end %}
+
 {% end %}
 
 {% section_light() %}
 
-## Tech add value for your customers
+##
 
-### Proactive alerts for your clients
+{% features_grid_with_image(title="Tech add value for your customers", image_1="/images/assessment.webp", alt_1="A screenshot of risk assessment from our platform", image_2="/images/monitoring.webp", alt_2="A screenshot of risk monitoring from our platform") %}
 
-Stay ahead of climate events.
-We monitor weather conditions in real time and send alerts:
-When a relevant event is forecasted
-As conditions evolve toward predefined thresholds
-When thresholds are reached or exceeded
-You can inform your clients early and act before impacts materialize.
+{% feature_card(title="Portfolio‑level monitoring", subtitle="See the bigger picture.") %}
 
-### Client‑specific triggers
-
-No generic assumptions.
-Triggers are designed using your clients’ own exposure data.Thresholds are calibrated to real locations, assets, and risk profiles, ensuring a clear link between:
-
-- The weather event
-- The trigger
-- The client’s financial exposure
-
-This precision reduces basis risk and builds trust.
-
-### Portfolio‑level monitoring
-
-See the bigger picture.
 The platform gives you a clear view across your portfolio:
 
 - Active covers and limits
@@ -90,6 +74,28 @@ The platform gives you a clear view across your portfolio:
 
 You gain visibility to support better advice, stronger renewals, and more strategic conversations.
 
-![A screenshot of risk assessment from our platform](/images/assessment.webp)
-![A screenshot of risk monitoring from our platform](/images/monitoring.webp)
+{% end %}
+
+{% feature_card(title="Client‑specific triggers", subtitle="No generic assumptions.") %}
+
+Triggers are designed using your clients’ own exposure data.Thresholds are calibrated to real locations, assets, and risk profiles, ensuring a clear link between:
+
+- The weather event
+- The trigger
+- The client’s financial exposure
+
+This precision reduces basis risk and builds trust.
+
+{% end %}
+
+{% feature_card(title="Proactive alerts for your clients", subtitle="Stay ahead of climate events.") %}
+
+We monitor weather conditions in real time and send alerts:
+When a relevant event is forecasted
+As conditions evolve toward predefined thresholds
+When thresholds are reached or exceeded
+You can inform your clients early and act before impacts materialize.
+
+{% end %}
+{% end %}
 {% end %}

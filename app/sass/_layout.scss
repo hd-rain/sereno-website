@@ -50,6 +50,10 @@ h2 {
   font-weight: 600;
   text-align: center;
   margin-bottom: $spacing-sm;
+
+  @media (min-width: $breakpoint-tablet) {
+    text-align: left;
+  }
 }
 
 h3 {
@@ -68,6 +72,16 @@ h4 {
 }
 
 p {
+  margin-bottom: $spacing-sm;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// List styling
+ul {
+  list-style-position: inside;
   margin-bottom: $spacing-sm;
 
   &:last-child {

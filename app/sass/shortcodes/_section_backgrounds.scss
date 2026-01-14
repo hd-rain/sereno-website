@@ -5,17 +5,38 @@
 .section-bg-white {
   background-color: $background-white;
   padding: $spacing-md 0;
-  
+
   &:first-of-type {
     padding-top: 0;
   }
 }
 
 .section-bg-light {
-  background: $background-light;
+  color: $primary-brown;
+  background-color: $background-light;
   padding: $spacing-md 0;
-  
+
   &:last-of-type {
     padding-bottom: 0;
+  }
+}
+
+.section-bg-icy {
+  color: $primary-brown;
+  background-color: $background-icy;
+  padding: $spacing-md 0;
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+}
+
+.section-bg-salmon {
+  background-color: $background-salmon;
+  color: $secondary-icy;
+  padding: $spacing-md 0;
+
+  h2 {
+    color: $secondary-icy;
   }
 }

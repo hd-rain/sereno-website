@@ -1,0 +1,35 @@
+// ===================================
+// Content + Image Shortcode
+// ===================================
+
+.content-with-image {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-md;
+  align-items: start;
+
+  @media (min-width: $breakpoint-tablet) {
+    grid-template-columns: 2fr 1fr;
+    gap: $spacing-lg;
+  }
+}
+
+// Global content image styling (reusable across shortcodes)
+.content-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-img {
+  width: 320px;
+  height: auto;
+  margin: auto;
+  border-radius: $border-radius-md;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 100%;
+    max-width: 100%;
+  }
+}

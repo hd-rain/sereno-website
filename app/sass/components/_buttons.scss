@@ -13,7 +13,8 @@
   text-align: center;
   cursor: pointer;
   border: 2px solid transparent;
-  transition: background $transition-fast, color $transition-fast, border-color $transition-fast, box-shadow $transition-fast;
+  transition: background $transition-fast, color $transition-fast,
+    border-color $transition-fast, box-shadow $transition-fast;
   text-decoration: none;
 }
 
@@ -39,16 +40,5 @@
     &:active {
       transform: translateY(0);
     }
-  }
-}
-
-.cta--secondary {
-  background: $background-white;
-  color: $secondary-icy-blue;
-  border-color: $secondary-icy-blue;
-
-  &:hover {
-    background: $secondary-icy-blue;
-    color: $background-white;
   }
 }

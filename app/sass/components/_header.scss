@@ -218,7 +218,6 @@
     transition: background $transition-fast, color $transition-fast;
 
     &:hover {
-      background: $background-light;
       color: $primary-brown;
     }
   }
