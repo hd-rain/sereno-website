@@ -1,3 +1,4 @@
+
 <header class="header">
     <div class="container">
         <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox">
@@ -23,21 +24,12 @@
                         Industries ▼
                     </button>
                     <div class="dropdown-menu" aria-labelledby="industries-dropdown">
-                        <a href="{{ get_url(path='/agriculture/') }}"
-                            class="dropdown-item {% if (page.extra and page.extra.industry == 'agriculture') or (section.extra and section.extra.industry == 'agriculture') %}active{% endif %}">Agriculture</a><a
-                            href="{{ get_url(path='/maritime/') }}"
-                            class="dropdown-item {% if (page.extra and page.extra.industry == 'maritime') or (section.extra and section.extra.industry == 'maritime') %}active{% endif %}">Maritime</a>
-                        <a href="{{ get_url(path='/construction/') }}"
-                            class="dropdown-item {% if (page.extra and page.extra.industry == 'construction') or (section.extra and section.extra.industry == 'construction') %}active{% endif %}">Construction</a>
-
-                        <a href="{{ get_url(path='/outdoor_industry/') }}"
-                            class="dropdown-item {% if (page.extra and page.extra.industry == 'outdoor_industry') or (section.extra and section.extra.industry == 'outdoor_industry') %}active{% endif %}">Outdoor
-                            Industry</a>
-                        <a href="{{ get_url(path='/event_industry/') }}"
-                            class="dropdown-item {% if (page.extra and page.extra.industry == 'event_industry') or (section.extra and section.extra.industry == 'event_industry') %}active{% endif %}">Event
-                            Industry</a>
-                        <a href="{{ get_url(path='/mobility/') }}"
-                            class="dropdown-item {% if (page.extra and page.extra.industry == 'mobility') or (section.extra and section.extra.industry == 'mobility') %}active{% endif %}">Mobility</a>
+                        {% for industry in config.extra.industries %}
+                        {% if industry.slug != "" %}
+                        <a href="{{ get_url(path=industry.url) }}"
+                            class="dropdown-item {% if (page.extra and page.extra.industry == industry.slug) or (section.extra and section.extra.industry == industry.slug) %}active{% endif %}">{{ industry.label }}</a>
+                        {% endif %}
+                        {% endfor %}
                     </div>
                 </div>
 
@@ -81,20 +73,12 @@
                         Industries <span class="arrow">▼</span>
                     </label>
                     <div class="mobile-nav-submenu">
-                        <a href="{{ get_url(path='/agriculture/') }}"
-                            class="mobile-nav-link {% if (page.extra and page.extra.industry == 'agriculture') or (section.extra and section.extra.industry == 'agriculture') %}active{% endif %}">Agriculture</a>
-                        <a href="{{ get_url(path='/maritime/') }}"
-                            class="mobile-nav-link {% if (page.extra and page.extra.industry == 'maritime') or (section.extra and section.extra.industry == 'maritime') %}active{% endif %}">Maritime</a>
-                        <a href="{{ get_url(path='/construction/') }}"
-                            class="mobile-nav-link {% if (page.extra and page.extra.industry == 'construction') or (section.extra and section.extra.industry == 'construction') %}active{% endif %}">Construction</a>
-                        <a href="{{ get_url(path='/outdoor_industry/') }}"
-                            class="mobile-nav-link {% if (page.extra and page.extra.industry == 'outdoor_industry') or (section.extra and section.extra.industry == 'outdoor_industry') %}active{% endif %}">Outdoor
-                            Industry</a>
-                        <a href="{{ get_url(path='/event_industry/') }}"
-                            class="mobile-nav-link {% if (page.extra and page.extra.industry == 'event_industry') or (section.extra and section.extra.industry == 'event_industry') %}active{% endif %}">Event
-                            Industry</a>
-                        <a href="{{ get_url(path='/mobility/') }}"
-                            class="mobile-nav-link {% if (page.extra and page.extra.industry == 'mobility') or (section.extra and section.extra.industry == 'mobility') %}active{% endif %}">Mobility</a>
+                        {% for industry in config.extra.industries %}
+                        {% if industry.slug != "" %}
+                        <a href="{{ get_url(path=industry.url) }}"
+                            class="mobile-nav-link {% if (page.extra and page.extra.industry == industry.slug) or (section.extra and section.extra.industry == industry.slug) %}active{% endif %}">{{ industry.label }}</a>
+                        {% endif %}
+                        {% endfor %}
                     </div>
                 </div>
 
