@@ -3,6 +3,6 @@
     {{ body | markdown | safe }}
   </div>
   <div class="content-visual">
-    <img src="{{ image }}" alt="{{ alt | default(value="") }}" class="content-img">
+    <img src="{{ get_url(path=image) }}" alt="{{ alt | default(value="") }}" class="content-img">
   </div>
 </div>

@@ -3,11 +3,11 @@
 
   <div class="features-grid">
     <div class="content-visual">
-      <img src="{{ image_1 }}" alt="{{ alt_1 | default(value="") }}" class="content-img">
+      <img src="{{ get_url(path=image_1) }}" alt="{{ alt_1 | default(value="") }}" class="content-img">
     </div>
     {{ body | markdown | safe }}
   </div>
   <div class="content-visual">
-    <img src="{{ image_2 }}" alt="{{ alt_2 | default(value="") }}" class="content-img">
+    <img src="{{ get_url(path=image_2) }}" alt="{{ alt_2 | default(value="") }}" class="content-img">
   </div>
 </div>
