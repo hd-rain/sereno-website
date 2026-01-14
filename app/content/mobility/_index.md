@@ -7,13 +7,7 @@ template = "industry.html"
 industry = "mobility"
 risk = "impacts in mobility"
 hero_image = "/images/mobility.webp"
-hero_sub_heading = "The weather parametric insurance made by seasoned meteorologists and weather experts."
-hero_sub_highlight = "Reducing weather-driven disruptions to fleet availability and operations."
-
-[[extra.testimonials]]
-name = "John Doe"
-quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-role = "Site Ops"
+hero_sub_heading = "Weather conditions influence usage, availability and operating costs.Sereno helps reduce the financial impact of adverse weather conditions on the mobility sector. "
 +++
 
 ## Mobility and Weather Dependencies

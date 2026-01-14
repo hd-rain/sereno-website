@@ -7,23 +7,7 @@ template = "industry.html"
 industry = "construction"
 risk = "disruption in construction"
 hero_image = "/images/construction.webp"
-hero_sub_heading = "The weather parametric insurance made by seasoned meteorologists and weather experts."
-hero_sub_highlight = "Tailoring coverage to each construction site's specific weather exposure."
-
-[[extra.testimonials]]
-name = "John Doe"
-quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-role = "Construction Lead"
-
-[[extra.testimonials]]
-name = "John Doe"
-quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-role = "Risk Officer"
-
-[[extra.testimonials]]
-name = "John Doe"
-quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-role = "Broker"
+hero_sub_heading = "Interruptions is a structural challenge across the construction sector.Sereno offers a dedicated cover aligned with how construction businesses actually operate."
 +++
 
 ## Construction Weather Consequences

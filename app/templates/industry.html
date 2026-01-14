@@ -18,10 +18,9 @@
                 {% endif %}
 
                 <p>{{section.extra.hero_sub_heading}}</p>
-                <p class="highlight">{{section.extra.hero_sub_highlight}}</p>
             </div>
             <div class="hero-image">
-                <img width="334px" height="450px" src='{{ get_url(path=section.extra.hero_image) }}'
+                <img width="300px" height="400px" src='{{ get_url(path=section.extra.hero_image) }}'
                     alt="Weather parametric insurance for European businesses" class="hero-img">
             </div>
         </div>
@@ -32,19 +31,7 @@
 
 <section class="interest">
     <div class="container">
-        {% include "partials/hook.html" %}
 
-        <!-- {% set_global partners_type = "insurer" %}
-        {% include "partials/partners.html" %}
-
-        {% set_global partners_type = "broker" %}
-        {% include "partials/partners.html" %} -->
-
-        <!-- {% include "partials/testimonials.html" %}
-
-        <div class="middle-cta">
-            {% include "partials/cta.html" %}
-        </div> -->
     </div>
 </section>
 

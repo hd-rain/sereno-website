@@ -7,23 +7,7 @@ template = "industry.html"
 industry = "agriculture"
 risk = "losses in agriculture"
 hero_image = "/images/agriculture.webp"
-hero_sub_heading = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-hero_sub_highlight = "Protecting farms and agricultural businesses whose yield depends on favorable weather conditions."
-
-[[extra.testimonials]]
-name = "John Doe"
-quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-role = "Farmer"
-
-[[extra.testimonials]]
-name = "Jane Smith"
-quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-role = "Agricultural Broker"
-
-[[extra.testimonials]]
-name = "Mike Johnson"
-quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-role = "Farm Manager"
+hero_sub_heading = "Coming soon."
 +++
 
 ## Agriculture Weather Risks

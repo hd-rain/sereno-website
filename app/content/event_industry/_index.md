@@ -7,23 +7,7 @@ template = "industry.html"
 industry = "event_industry"
 risk = "losses in event industry"
 hero_image = "/images/event_industry.webp"
-hero_sub_heading = "The weather parametric insurance made by seasoned meteorologists and weather experts."
-hero_sub_highlight = "Protecting event organizers whose success depends on favorable weather conditions."
-
-[[extra.testimonials]]
-name = "John Doe"
-quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-role = "Event Organizer"
-
-[[extra.testimonials]]
-name = "Jane Smith"
-quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-role = "Festival Manager"
-
-[[extra.testimonials]]
-name = "Mike Johnson"
-quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-role = "Entertainment Broker"
+hero_sub_heading = "Coming soon."
 +++
 
 ## Event Industry Weather Risks

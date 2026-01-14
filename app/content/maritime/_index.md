@@ -7,18 +7,7 @@ template = "industry.html"
 industry = "maritime"
 risk = "delays and costs at sea"
 hero_image = "/images/maritime.webp"
-hero_sub_heading = "The weather parametric insurance made by seasoned meteorologists and weather experts."
-hero_sub_highlight = "Covering delays and operational disruptions in shipping operations."
-
-[[extra.testimonials]]
-name = "John Doe"
-quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-role = "Risk Manager"
-
-[[extra.testimonials]]
-name = "John Doe"
-quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-role = "Supply Chain Manager"
+hero_sub_heading = "Delays and extra costs caused by adverse weather are a daily reality in shipping. Sereno provides a dedicated maritime cover designed around real operational exposure."
 +++
 
 ## Maritime Weather Challenges

@@ -7,23 +7,7 @@ template = "industry.html"
 industry = "outdoor_industry"
 risk = "losses in outdoor industry"
 hero_image = "/images/outdoor_industry.webp"
-hero_sub_heading = "The weather parametric insurance made by seasoned meteorologists and weather experts."
-hero_sub_highlight = "Protecting businesses whose revenue depends on favorable weather conditions."
-
-[[extra.testimonials]]
-name = "John Doe"
-quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-role = "Broker"
-
-[[extra.testimonials]]
-name = "John Doe"
-quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-role = "Business Owner"
-
-[[extra.testimonials]]
-name = "John Doe"
-quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-role = "Event Manager"
+hero_sub_heading = "Outdoor activities rely on favourable conditions to operate and attract customers. Sereno provides financial protection for businesses whose performance depends on the weather."
 +++
 
 ## Outdoor Industry Weather Risks
