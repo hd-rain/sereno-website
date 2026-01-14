@@ -43,7 +43,7 @@ h1 {
   margin-bottom: $spacing-sm;
 
   @media (min-width: $breakpoint-tablet) {
-    font-size: calc($font-size-h1 * 1.2); // 3rem tablet+
+    font-size: $font-size-h1-large;
   }
 }
 
@@ -151,7 +151,7 @@ a {
       -webkit-text-fill-color: transparent;
       background-clip: text;
       font-weight: 700;
-      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: background 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
   }
 
@@ -176,7 +176,7 @@ a {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-weight: 700;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: background 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 }
 

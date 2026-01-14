@@ -46,7 +46,7 @@
   font-size: $font-size-small;
   font-weight: 500;
   text-decoration: none;
-  transition: all $transition-fast;
+  transition: background $transition-fast, color $transition-fast, border-color $transition-fast, transform $transition-fast;
   white-space: nowrap;
   scroll-snap-align: center;
   flex-shrink: 0;

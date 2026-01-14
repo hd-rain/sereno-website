@@ -13,7 +13,7 @@
   text-align: center;
   cursor: pointer;
   border: 2px solid transparent;
-  transition: all $transition-fast;
+  transition: background $transition-fast, color $transition-fast, border-color $transition-fast, box-shadow $transition-fast;
   text-decoration: none;
 }
 

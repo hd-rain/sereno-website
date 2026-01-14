@@ -1,32 +1,132 @@
 <header class="header">
     <div class="container">
+        <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox">
+        <label for="mobile-menu-toggle" class="mobile-menu-overlay"></label>
         <div class="header-content">
             <div class="header-brand">
-                <a href="{{ get_url(path='/') }}" class="logo">
+                <label for="mobile-menu-toggle" class="mobile-menu-trigger">
+                    <img width="20px" height="24px" src="{{ get_url(path='images/sereno.webp') }}"
+                        alt="Sereno - Weather Parametric Insurance">
+                    <span class="logo-text">sereno</span>
+                </label>
+                <a href="{{ get_url(path='/') }}" class="logo desktop-logo">
                     <img width="20px" height="24px" src="{{ get_url(path='images/sereno.webp') }}"
                         alt="Sereno - Weather Parametric Insurance">
                     <span class="logo-text">sereno</span>
                 </a>
             </div>
 
-            <nav class="header-nav">
-                <a href="{{ get_url(path='/maritime/') }}"
-                    class="nav-link {% if (page.extra and page.extra.industry == 'maritime') or (section.extra and section.extra.industry == 'maritime') %}active{% endif %}">
-                    Maritime
-                </a>
-                <a href="{{ get_url(path='/construction/') }}"
-                    class="nav-link {% if (page.extra and page.extra.industry == 'construction') or (section.extra and section.extra.industry == 'construction') %}active{% endif %}">
-                    Construction
-                </a>
-                <a href="{{ get_url(path='/outdoors/') }}"
-                    class="nav-link {% if (page.extra and page.extra.industry == 'outdoors') or (section.extra and section.extra.industry == 'outdoors') %}active{% endif %}">
-                    Outdoors
-                </a>
-                <a href="{{ get_url(path='/mobility/') }}"
-                    class="nav-link {% if (page.extra and page.extra.industry == 'mobility') or (section.extra and section.extra.industry == 'mobility') %}active{% endif %}">
-                    Mobility
-                </a>
+            <!--so TABLET+ SPECIFIC STRUCTURE -->
+            <nav class="tablet-plus-nav">
+                <div class="dropdown">
+                    <button class="dropdown-toggle nav-link" type="button" id="industries-dropdown">
+                        Industries ▼
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="industries-dropdown">
+                        <a href="{{ get_url(path='/agriculture/') }}"
+                            class="dropdown-item {% if (page.extra and page.extra.industry == 'agriculture') or (section.extra and section.extra.industry == 'agriculture') %}active{% endif %}">Agriculture</a><a
+                            href="{{ get_url(path='/maritime/') }}"
+                            class="dropdown-item {% if (page.extra and page.extra.industry == 'maritime') or (section.extra and section.extra.industry == 'maritime') %}active{% endif %}">Maritime</a>
+                        <a href="{{ get_url(path='/construction/') }}"
+                            class="dropdown-item {% if (page.extra and page.extra.industry == 'construction') or (section.extra and section.extra.industry == 'construction') %}active{% endif %}">Construction</a>
+
+                        <a href="{{ get_url(path='/outdoor_industry/') }}"
+                            class="dropdown-item {% if (page.extra and page.extra.industry == 'outdoor_industry') or (section.extra and section.extra.industry == 'outdoor_industry') %}active{% endif %}">Outdoor
+                            Industry</a>
+                        <a href="{{ get_url(path='/event_industry/') }}"
+                            class="dropdown-item {% if (page.extra and page.extra.industry == 'event_industry') or (section.extra and section.extra.industry == 'event_industry') %}active{% endif %}">Event
+                            Industry</a>
+                        <a href="{{ get_url(path='/mobility/') }}"
+                            class="dropdown-item {% if (page.extra and page.extra.industry == 'mobility') or (section.extra and section.extra.industry == 'mobility') %}active{% endif %}">Mobility</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropdown-toggle nav-link" type="button" id="resources-dropdown">
+                        Resources ▼
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="resources-dropdown">
+                        <a href="#" class="dropdown-item">Coming Soon</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropdown-toggle nav-link" type="button" id="company-dropdown">
+                        Company ▼
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="company-dropdown">
+                        <a href="{{ get_url(path='/about/') }}" class="dropdown-item">About</a>
+                        <a href="{{ get_url(path='/careers/') }}" class="dropdown-item">Careers</a>
+                        <a href="{{ get_url(path='/contact/') }}" class="dropdown-item">Contact</a>
+                    </div>
+                </div>
             </nav>
+            <!--eo TABLET+ SPECIFIC STRUCTURE -->
+
+
+            <!--so MOBILE SPECIFIC STRUCTURE -->
+            <nav class="mobile-nav" id="mobile-nav">
+                <input type="radio" id="mobile-nav-close" name="mobile-nav" class="mobile-submenu-radio">
+
+                <div class="mobile-nav-item mobile-nav-home">
+                    <a href="{{ get_url(path='/') }}" class="mobile-nav-home-link">Home</a>
+                </div>
+
+                <div class="mobile-nav-item">
+                    <input type="radio" id="mobile-industries-toggle" name="mobile-nav" class="mobile-submenu-radio">
+                    <label for="mobile-industries-toggle" class="mobile-nav-toggle mobile-nav-open">
+                        Industries <span class="arrow">▼</span>
+                    </label>
+                    <label for="mobile-nav-close" class="mobile-nav-toggle mobile-nav-close">
+                        Industries <span class="arrow">▼</span>
+                    </label>
+                    <div class="mobile-nav-submenu">
+                        <a href="{{ get_url(path='/agriculture/') }}"
+                            class="mobile-nav-link {% if (page.extra and page.extra.industry == 'agriculture') or (section.extra and section.extra.industry == 'agriculture') %}active{% endif %}">Agriculture</a>
+                        <a href="{{ get_url(path='/maritime/') }}"
+                            class="mobile-nav-link {% if (page.extra and page.extra.industry == 'maritime') or (section.extra and section.extra.industry == 'maritime') %}active{% endif %}">Maritime</a>
+                        <a href="{{ get_url(path='/construction/') }}"
+                            class="mobile-nav-link {% if (page.extra and page.extra.industry == 'construction') or (section.extra and section.extra.industry == 'construction') %}active{% endif %}">Construction</a>
+                        <a href="{{ get_url(path='/outdoor_industry/') }}"
+                            class="mobile-nav-link {% if (page.extra and page.extra.industry == 'outdoor_industry') or (section.extra and section.extra.industry == 'outdoor_industry') %}active{% endif %}">Outdoor
+                            Industry</a>
+                        <a href="{{ get_url(path='/event_industry/') }}"
+                            class="mobile-nav-link {% if (page.extra and page.extra.industry == 'event_industry') or (section.extra and section.extra.industry == 'event_industry') %}active{% endif %}">Event
+                            Industry</a>
+                        <a href="{{ get_url(path='/mobility/') }}"
+                            class="mobile-nav-link {% if (page.extra and page.extra.industry == 'mobility') or (section.extra and section.extra.industry == 'mobility') %}active{% endif %}">Mobility</a>
+                    </div>
+                </div>
+
+                <div class="mobile-nav-item">
+                    <input type="radio" id="mobile-resources-toggle" name="mobile-nav" class="mobile-submenu-radio">
+                    <label for="mobile-resources-toggle" class="mobile-nav-toggle mobile-nav-open">
+                        Resources <span class="arrow">▼</span>
+                    </label>
+                    <label for="mobile-nav-close" class="mobile-nav-toggle mobile-nav-close">
+                        Resources <span class="arrow">▼</span>
+                    </label>
+                    <div class="mobile-nav-submenu">
+                        <a href="#" class="mobile-nav-link">Coming Soon</a>
+                    </div>
+                </div>
+
+                <div class="mobile-nav-item">
+                    <input type="radio" id="mobile-company-toggle" name="mobile-nav" class="mobile-submenu-radio">
+                    <label for="mobile-company-toggle" class="mobile-nav-toggle mobile-nav-open">
+                        Company <span class="arrow">▼</span>
+                    </label>
+                    <label for="mobile-nav-close" class="mobile-nav-toggle mobile-nav-close">
+                        Company <span class="arrow">▼</span>
+                    </label>
+                    <div class="mobile-nav-submenu">
+                        <a href="{{ get_url(path='/about/') }}" class="mobile-nav-link">About</a>
+                        <a href="{{ get_url(path='/careers/') }}" class="mobile-nav-link">Careers</a>
+                        <a href="{{ get_url(path='/contact/') }}" class="mobile-nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+            <!-- eo MOBILE SPECIFIC STRUCTURE -->
 
             <div class="header-cta">
                 {% include "partials/cta.html" %}

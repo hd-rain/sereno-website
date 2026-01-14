@@ -7,7 +7,7 @@
   border-bottom: 1px solid $border-light;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: $z-header;
 }
 
 .header-content {
@@ -17,14 +17,48 @@
   padding: $spacing-sm 0;
 }
 
+// Mobile Menu Checkbox
+// ===================================
+.mobile-menu-checkbox {
+  display: none;
+}
+
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  z-index: $z-overlay;
+  display: none;
+  cursor: pointer;
+}
+
 // Brand/Logo
 // ===================================
 .header-brand {
-  .logo {
+  .logo,
+  .mobile-menu-trigger {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    justify-items: baseline;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: inherit;
+
+    @media (min-width: $breakpoint-tablet) {
+      display: none;
+    }
+  }
+
+  .desktop-logo {
+    display: none;
+
+    @media (min-width: $breakpoint-tablet) {
+      display: flex;
+    }
   }
 
   .logo-text {
@@ -36,7 +70,7 @@
 
 // Navigation
 // ===================================
-.header-nav {
+.tablet-plus-nav {
   display: none;
 
   @media (min-width: $breakpoint-tablet) {
@@ -52,7 +86,7 @@
   .nav-link {
     font-weight: 500;
     padding: $spacing-xs $spacing-sm;
-    transition: all $transition-fast;
+    transition: color $transition-fast, transform $transition-fast;
     position: relative;
 
     &:hover {
@@ -60,31 +94,236 @@
       transform: translateY(-1px);
     }
 
-    &.active {
-      color: $primary-brown;
-      transform: translateY(0);
-
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: -4px;
-        left: $spacing-xs;
-        right: $spacing-xs;
-        height: 2px;
-        background-color: $primary-brown;
-        border-radius: 1px;
-      }
+    @media (prefers-reduced-motion: reduce) {
+      transition: color $transition-fast;
 
       &:hover {
-        color: $primary-brown;
+        transform: none;
       }
     }
   }
 }
 
+// Dropdown Navigation
+// ===================================
+.dropdown {
+  display: none;
+
+  @media (min-width: $breakpoint-tablet) {
+    display: block;
+    position: relative;
+  }
+
+  .dropdown-toggle {
+    display: flex;
+    align-items: center;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 500;
+    padding: $spacing-xs $spacing-sm;
+    transition: color $transition-fast, transform $transition-fast;
+
+    &:hover {
+      color: $primary-brown;
+      transform: translateY(-1px);
+    }
+  }
+
+  .dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    inset-inline-start: 0;
+    min-width: $menu-min-width;
+    background: $background-white;
+    border: 1px solid $border-light;
+    border-radius: $border-radius-sm;
+    box-shadow: $shadow-menu;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-$spacing-sm);
+    transition: opacity $transition-fast, visibility $transition-fast,
+      transform $transition-fast;
+    z-index: $z-dropdown;
+    padding: $spacing-xs 0;
+  }
+
+  .dropdown-item {
+    display: block;
+    padding: $spacing-xs $spacing-sm;
+    color: $text-primary;
+    text-decoration: none;
+    transition: color $transition-fast, transform $transition-fast;
+    font-size: $font-size-body;
+
+    &:hover {
+      color: $primary-brown;
+      transform: translateX($spacing-xxs);
+    }
+
+    &.active {
+      color: $primary-brown;
+      font-weight: 600;
+    }
+  }
+
+  &:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+// Mobile Navigation
+// ===================================
+.mobile-nav {
+  position: absolute;
+  top: calc(100% - ($spacing-xs * 2));
+  inset-inline-start: 0;
+  min-width: $menu-min-width;
+  background: $background-white;
+  border: 1px solid $border-light;
+  border-radius: 0 $border-radius-sm $border-radius-sm 0;
+  box-shadow: $shadow-menu;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-$spacing-sm);
+  transition: opacity $transition-fast, visibility $transition-fast,
+    transform $transition-fast;
+  z-index: $z-mobile-nav;
+  padding: $spacing-xs 0;
+
+  @media (min-width: $breakpoint-tablet) {
+    display: none;
+  }
+
+  .mobile-nav-item {
+    border-bottom: 1px solid $border-light;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .mobile-nav-home-link {
+    display: block;
+    padding: $spacing-sm $spacing-md;
+    color: $text-primary;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background $transition-fast, color $transition-fast;
+
+    &:hover {
+      background: $background-light;
+      color: $primary-brown;
+    }
+  }
+
+  .mobile-nav-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $spacing-sm $spacing-md;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: $text-primary;
+    cursor: pointer;
+    transition: background $transition-fast, color $transition-fast;
+
+    &:hover {
+      background: $background-light;
+      color: $primary-brown;
+    }
+
+    .arrow {
+      transition: transform $transition-fast;
+      font-size: $font-size-small;
+    }
+  }
+
+  .mobile-nav-submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height $transition-fast;
+
+    .mobile-nav-link {
+      display: block;
+      padding: $spacing-xs $spacing-sm;
+      color: $text-primary;
+      text-decoration: none;
+      transition: color $transition-fast, transform $transition-fast;
+
+      &:hover {
+        color: $primary-brown;
+        transform: translateX($spacing-xxs);
+      }
+
+      &.active {
+        color: $primary-brown;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .mobile-submenu-radio {
+    display: none;
+  }
+
+  // Shared arrow transition for both open/close states
+  .mobile-nav-toggle .arrow {
+    transition: transform $transition-fast;
+  }
+
+  // Show "open" label by default, hide "close" label
+  .mobile-nav-open {
+    display: flex;
+  }
+
+  .mobile-nav-close {
+    display: none;
+
+    .arrow {
+      transform: rotate(180deg);
+    }
+  }
+
+  // When a category is selected, show "close" label and hide "open" label
+  .mobile-submenu-radio:checked ~ .mobile-nav-open {
+    display: none;
+  }
+
+  .mobile-submenu-radio:checked ~ .mobile-nav-close {
+    display: flex;
+  }
+
+  .mobile-submenu-radio:checked ~ .mobile-nav-submenu {
+    max-height: $mobile-nav-max-height;
+  }
+}
+
+.mobile-menu-checkbox:checked ~ .mobile-menu-overlay {
+  display: block;
+}
+
+.mobile-menu-checkbox:checked ~ .header-content .mobile-nav {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
 // Header CTA
 // ===================================
 .header-cta {
+  position: relative;
+  z-index: $z-cta;
+
   .cta {
     padding: $spacing-xs $spacing-sm;
     font-size: $font-size-small;
