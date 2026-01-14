@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="dots-container">
+        <a href="{{ get_url(path='/') }}"
+            class="dot {% if not page.extra.industry and not section.extra.industry %}dot--active{% endif %}"
+            aria-label="Home page">
+        </a>
+
+        <a href="{{ get_url(path='/agriculture/') }}"
+            class="dot {% if (page.extra and page.extra.industry == 'agriculture') or (section.extra and section.extra.industry == 'agriculture') %}dot--active{% endif %}"
+            aria-label="Agriculture industry solutions">
+        </a>
+
+        <a href="{{ get_url(path='/maritime/') }}"
+            class="dot {% if (page.extra and page.extra.industry == 'maritime') or (section.extra and section.extra.industry == 'maritime') %}dot--active{% endif %}"
+            aria-label="Maritime industry solutions">
+        </a>
+
+        <a href="{{ get_url(path='/construction/') }}"
+            class="dot {% if (page.extra and page.extra.industry == 'construction') or (section.extra and section.extra.industry == 'construction') %}dot--active{% endif %}"
+            aria-label="Construction industry solutions">
+        </a>
+
+        <a href="{{ get_url(path='/outdoor_industry/') }}"
+            class="dot {% if (page.extra and page.extra.industry == 'outdoor_industry') or (section.extra and section.extra.industry == 'outdoor_industry') %}dot--active{% endif %}"
+            aria-label="Outdoor industry solutions">
+        </a>
+
+        <a href="{{ get_url(path='/event_industry/') }}"
+            class="dot {% if (page.extra and page.extra.industry == 'event_industry') or (section.extra and section.extra.industry == 'event_industry') %}dot--active{% endif %}"
+            aria-label="Event industry solutions">
+        </a>
+
+        <a href="{{ get_url(path='/mobility/') }}"
+            class="dot {% if (page.extra and page.extra.industry == 'mobility') or (section.extra and section.extra.industry == 'mobility') %}dot--active{% endif %}"
+            aria-label="Mobility industry solutions">
+        </a>
+    </div>
+</div>

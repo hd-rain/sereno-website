@@ -90,10 +90,6 @@ a {
 .desire,
 .action {
   padding: $spacing-md 0;
-
-  @media (min-width: $breakpoint-tablet) {
-    padding: $spacing-lg 0;
-  }
 }
 
 .attention {

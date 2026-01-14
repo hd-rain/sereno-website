@@ -1,0 +1,48 @@
+// ===================================
+// Industry Dots Component (Carousel-style)
+// ===================================
+
+.dots-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 $spacing-sm;
+}
+
+.dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $spacing-md;
+  height: $spacing-md;
+  text-decoration: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    width: $spacing-xs;
+    height: $spacing-xs;
+    border-radius: 50%;
+    background: $primary-brown;
+    transition: transform $transition-fast, background $transition-fast;
+  }
+
+  &:hover::before {
+    background: $highlight-brown;
+  }
+
+  &.dot--active::before {
+    background: $highlight-brown;
+    transform: scale(1.5);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: opacity $transition-fast;
+
+    &:hover,
+    &.dot--active {
+      transform: none;
+    }
+  }
+}
