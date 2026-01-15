@@ -26,11 +26,11 @@ keywords = " parametric weather insurance, weather risk insurance, weather prote
 
 industries = [
     { slug = "", label = "Home", url = "/" },
-    { slug = "agriculture", label = "Agriculture", url = "/agriculture/" },
+    # { slug = "agriculture", label = "Agriculture", url = "/agriculture/" },
     { slug = "maritime", label = "Maritime", url = "/maritime/" },
     { slug = "construction", label = "Construction", url = "/construction/" },
     { slug = "outdoor_industry", label = "Outdoor Industry", url = "/outdoor_industry/" },
-    { slug = "event_industry", label = "Event Industry", url = "/event_industry/" },
+    # { slug = "event_industry", label = "Event Industry", url = "/event_industry/" },
     { slug = "mobility", label = "Mobility", url = "/mobility/" },
 ]
 
