@@ -44,8 +44,6 @@ When disruption hits, your clients get certainty when it matters most.
 
 {% section_white() %}
 
-{% content_with_image(image="/images/experts.webp", alt="A painting by susan wilkinson representing a raster weather data picture") %}
-
 ## Unique weather data expertise
 
 _Reducing basis risk with superior data and proven expertise._
@@ -53,8 +51,6 @@ _Reducing basis risk with superior data and proven expertise._
 Historical data is no longer enough. Our proprietary algorithms account for climate change trends to price your risk fairly for tomorrow, not yesterday.We don't only rely on generic airport weather stations. We fuse satellite imagery, radar, and IoT sensors to model risk exactly where your assets are.
 
 Backed by a team of experienced meteorologists and climate scientists who continuously validate assumptions, refine models, and ensure scientific rigor at every step.The gap between "weather at the station" and "weather at your site" costs you money. We close that gap.
-
-{% end %}
 
 {% end %}
 
