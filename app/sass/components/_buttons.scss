@@ -21,12 +21,12 @@
 }
 
 .cta--primary {
-  background: $highlight-brown;
+  background: $primary-brown;
   color: $secondary-light;
-  border-color: $highlight-brown;
+  border-color: $primary-brown;
 
   &:hover {
-    box-shadow: 0 4px 12px rgba($highlight-brown, 0.3);
+    box-shadow: 0 4px 12px rgba($primary-brown, 0.3);
     color: $background-white;
   }
 
