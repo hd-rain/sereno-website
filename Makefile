@@ -2,7 +2,7 @@
 
 # Default values
 LOCAL_URL = http://127.0.0.1:1111
-REMOTE_URL = https://hd-rain.github.io/sereno-website
+REMOTE_URL = https://www.sereno.insure
 SLUG ?= 
 
 # Generate timestamp for filenames
@@ -56,4 +56,4 @@ help:
 	@echo ""
 	@echo "Usage with slug:"
 	@echo "  make lh SLUG=maritime     - Test http://127.0.0.1:1111/maritime"
-	@echo "  make lh-remote SLUG=maritime - Test https://hd-rain.github.io/sereno-website/maritime"
+	@echo "  make lh-remote SLUG=maritime - Test https://www.sereno.insure/maritime"
