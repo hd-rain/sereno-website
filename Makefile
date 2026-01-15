@@ -9,8 +9,8 @@ SLUG ?=
 TIMESTAMP = $(shell date '+%Y-%m-%d-%H-%M-%S')
 
 # Build URLs with optional slug
-LOCAL_TEST_URL = $(LOCAL_URL)$(if $(SLUG),/$(SLUG))
-REMOTE_TEST_URL = $(REMOTE_URL)$(if $(SLUG),/$(SLUG))
+LOCAL_TEST_URL = $(LOCAL_URL)$(if $(SLUG),/$(SLUG)/)
+REMOTE_TEST_URL = $(REMOTE_URL)$(if $(SLUG),/$(SLUG)/)
 
 .PHONY: lh lh-remote lh-mobile lh-desktop lh-mobile-remote lh-desktop-remote
 
