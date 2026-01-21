@@ -6,9 +6,10 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: $spacing-md;
-  align-items: start;
+  align-items: center;
+  padding-bottom: $spacing-sm;
 
-  @media (min-width: $breakpoint-tablet) {
+  @media (min-width: $breakpoint-desktop) {
     grid-template-columns: 2fr 1fr;
     gap: $spacing-lg;
   }
@@ -17,19 +18,19 @@
 .content-with-image-reversed {
   @extend .content-with-image;
 
-  @media (min-width: $breakpoint-tablet) {
+  @media (min-width: $breakpoint-desktop) {
     grid-template-columns: 1fr 2fr;
-    align-items: end;
+    align-items: start;
   }
 
   .content-text {
-    @media (min-width: $breakpoint-tablet) {
+    @media (min-width: $breakpoint-desktop) {
       order: 2;
     }
   }
 
   .content-visual {
-    @media (min-width: $breakpoint-tablet) {
+    @media (min-width: $breakpoint-desktop) {
       order: 1;
     }
   }

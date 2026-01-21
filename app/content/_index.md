@@ -44,25 +44,28 @@ Designed to complement traditional insurance, Sereno’s parametric solutions ar
 {{ bullet_card(title="Objective triggers", subtitle="No loss adjustment process", icon="dollar") }}
 {{ bullet_card(title="Predictable protection", subtitle="Stabilize cash flowand earnings", icon="chart")}}
 {% end %}
-When disruption hits, your clients get certainty when it matters most.
 
 {% end %}
+When disruption hits, your clients get certainty when it matters most.
 
 {% end %}
 
 {% section() %}
 
-{% content_with_image(image="/images/weather.webp", alt="Weather data experts working on meteorological analysis") %}
-
 ## Unique weather data expertise
 
 _Reducing basis risk with superior data and proven expertise._
 
-Historical data is no longer enough. Our proprietary algorithms account for climate change trends to price your risk fairly for tomorrow, not yesterday. We don't only rely on generic airport weather stations. We fuse satellite imagery, radar, and IoT sensors to model risk exactly where your assets are.
+{% content_with_image(image="/images/weather.webp", alt="Weather data experts working on meteorological analysis") %}
 
-Backed by a team of experienced meteorologists and climate scientists who continuously validate assumptions, refine models, and ensure scientific rigor at every step. The gap between "weather at the station" and "weather at your site" costs you money. We close that gap.
+{% simple_list() %}
+{{ bullet_card(title="Climate-adjusted models", subtitle="Proprietary algorithms that account for climate change trends", icon="satellite", variant="light") }}
+{{ bullet_card(title="Multi-source data fusion", subtitle="Satellite imagery, radar, and IoT sensors for precise location risk", icon="radar", variant="light") }}
+{{ bullet_card(title="Team of weather experts", subtitle="Policies designed and validated by meteorologists and climate scientists", icon="researcher", variant="light") }}
+{% end %}
 
 {% end %}
+The gap between "weather at the station" and "weather at your site" costs you money. We close that gap.
 
 {% end %}
 

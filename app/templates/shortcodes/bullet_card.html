@@ -1,4 +1,4 @@
-<li class="bullet-card">
+<li class="bullet-card{% if variant %} bullet-card--{{ variant }}{% endif %}">
   {% if icon %}
   <div class="bullet-card-icon">
     <img src="{{ get_url(path='images/' ~ icon ~ '.svg') }}" alt="{{ title }}" width="32" height="32">
