@@ -10,7 +10,9 @@
   border-radius: $border-radius-md;
   border: 1px solid $border-light;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  transition: box-shadow $transition-medium, transform $transition-medium;
+  transition:
+    box-shadow $transition-medium,
+    transform $transition-medium;
 
   &:hover {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);

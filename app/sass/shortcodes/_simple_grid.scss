@@ -3,7 +3,7 @@
 // ===================================
 
 .simple-grid {
-  padding: $spacing-sm 0;
+  padding: $spacing-sm 0 $spacing-md 0;
   display: grid;
   grid-template-columns: 1fr;
   gap: $spacing-md;
@@ -12,4 +12,8 @@
     grid-template-columns: 1fr 1fr;
     gap: $spacing-md;
   }
+}
+
+.simple-grid-with-images {
+  padding-bottom: $spacing-md;
 }

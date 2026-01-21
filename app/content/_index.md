@@ -71,9 +71,13 @@ The gap between "weather at the station" and "weather at your site" costs you mo
 
 {% section(type="light") %}
 
-{% simple_grid_with_image(title="Tech add value for your customers", image_1="/images/assessment.webp", alt_1="A screenshot of risk assessment from our platform", image_2="/images/monitoring.webp", alt_2="A screenshot of risk monitoring from our platform") %}
+## Tech add value for your customers
 
-{% feature_card(title="Portfolio‑level monitoring", subtitle="See the bigger picture.") %}
+_More than policies—a complete platform to monitor your clients' exposure._
+
+{% simple_grid_with_image(image_1="/images/assessment.webp", alt_1="A screenshot of risk assessment from our platform", image_2="/images/monitoring.webp", alt_2="A screenshot of risk monitoring from our platform") %}
+
+{% feature_card(title="Portfolio‑level monitoring", subtitle="See the bigger picture.", icon="activity") %}
 
 The platform gives you a clear view across your portfolio:
 
@@ -85,7 +89,7 @@ You gain visibility to support better advice, stronger renewals, and more strate
 
 {% end %}
 
-{% feature_card(title="Client‑specific triggers", subtitle="No generic assumptions.") %}
+{% feature_card(title="Client‑specific triggers", subtitle="No generic assumptions.", icon="bell") %}
 
 Triggers are designed using your clients’ own exposure data.Thresholds are calibrated to real locations, assets, and risk profiles, ensuring a clear link between:
 
@@ -97,12 +101,14 @@ This precision reduces basis risk and builds trust.
 
 {% end %}
 
-{% feature_card(title="Proactive alerts for your clients", subtitle="Stay ahead of climate events.") %}
+{% feature_card(title="Proactive alerts for your clients", subtitle="Stay ahead of climate events.", icon="target") %}
 
 We monitor weather conditions in real time and send alerts:
-When a relevant event is forecasted
-As conditions evolve toward predefined thresholds
-When thresholds are reached or exceeded
+
+- When a relevant event is forecasted
+- As conditions evolve toward predefined thresholds
+- When thresholds are reached or exceeded
+
 You can inform your clients early and act before impacts materialize.
 
 {% end %}
