@@ -3,13 +3,13 @@ title = "Sereno - Weather Parametric Insurance"
 description = "Fast, transparent parametric insurance covering weather-related business disruptions. Built by meteorologists for SMEs across Europe."
 +++
 
-{% section_white() %}
+{% section() %}
 
 ## A trusted partner for brokers
 
 _Partner with confidence. We make parametric insurance accessible and reliable._
 
-{% features_grid() %}
+{% simple_grid() %}
 
 {% value_card(title="Solid", subtitle="Strong capacity behind us.", icon="shield") %}
 Robust, transparent, and designed for long‑term reliability. We operate as an MGA with committed, highly rated insurance partners.
@@ -29,22 +29,28 @@ Modular structures, adjustable limits, and scalable capacity to complement exist
 {% end %}
 {% end %}
 
-{% section_light() %}
+{% section(type="orange") %}
 
 ## Empower your clients’ financial resilience
 
 _Climate events don’t just cause damage. They disrupt revenue, margins, and liquidity._
 
+{% content_with_image(image="/images/experts.webp", alt="Weather data experts working on meteorological-related insurance indexes",reverse="true") %}
+
 Designed to complement traditional insurance, Sereno’s parametric solutions are built to provide :
 
-- Immediate liquidity following a qualifying event
-- Payouts based on objective triggers, no loss adjustment process
-- Predictable protection to stabilize cash flow and earnings
-
+{% simple_list() %}
+{{ bullet_card(title="Immediate liquidity", subtitle="Following a qualifying event", icon="clock") }}
+{{ bullet_card(title="Objective triggers", subtitle="No loss adjustment process", icon="dollar") }}
+{{ bullet_card(title="Predictable protection", subtitle="Stabilize cash flowand earnings", icon="chart")}}
+{% end %}
 When disruption hits, your clients get certainty when it matters most.
+
 {% end %}
 
-{% section_white() %}
+{% end %}
+
+{% section() %}
 
 {% content_with_image(image="/images/weather.webp", alt="Weather data experts working on meteorological analysis") %}
 
@@ -60,9 +66,9 @@ Backed by a team of experienced meteorologists and climate scientists who contin
 
 {% end %}
 
-{% section_light() %}
+{% section(type="light") %}
 
-{% features_grid_with_image(title="Tech add value for your customers", image_1="/images/assessment.webp", alt_1="A screenshot of risk assessment from our platform", image_2="/images/monitoring.webp", alt_2="A screenshot of risk monitoring from our platform") %}
+{% simple_grid_with_image(title="Tech add value for your customers", image_1="/images/assessment.webp", alt_1="A screenshot of risk assessment from our platform", image_2="/images/monitoring.webp", alt_2="A screenshot of risk monitoring from our platform") %}
 
 {% feature_card(title="Portfolio‑level monitoring", subtitle="See the bigger picture.") %}
 

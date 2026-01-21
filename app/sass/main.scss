@@ -15,8 +15,10 @@
 @import "components/dots";
 
 // 4. Shortcodes
-@import "shortcodes/section_backgrounds";
-@import "shortcodes/features_grid";
+@import "shortcodes/sections";
+@import "shortcodes/simple_grid";
+@import "shortcodes/simple_list";
 @import "shortcodes/value_card";
 @import "shortcodes/feature_card";
 @import "shortcodes/content_with_image";
+@import "shortcodes/bullet_card";

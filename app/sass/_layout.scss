@@ -81,16 +81,6 @@ p {
   }
 }
 
-// List styling
-ul {
-  list-style-position: inside;
-  margin-bottom: $spacing-sm;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
 // Links
 // ===================================
 a {

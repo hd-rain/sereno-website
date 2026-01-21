@@ -1,4 +1,4 @@
-<div class="content-with-image">
+<div class="content-with-image{% if reverse %}-reversed{% endif %}">
   <div class="content-text">
     {{ body | markdown | safe }}
   </div>

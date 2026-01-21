@@ -13,7 +13,9 @@ $highlight-brown: #c87337; // Highlight elements, CTAs
 // Backgrounds
 $background-light: #f5ffff; // Light frost tint
 $background-white: #ffffff; // Pure white sections
-$background-salmon: #d28d5b;
+$background-orange-1: #cfab8a;
+$background-orange-2: #c8a07c;
+$background-orange-3: #c8a07c;
 $background-icy: #e6ffff;
 
 // Text
@@ -26,7 +28,11 @@ $success: #4a9b4a; // Confirmation states
 
 // Typography
 // ===================================
-$font-primary: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+$font-primary:
+  "DM Sans",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
   sans-serif;
 
 // Type Scale (Mobile-First)
@@ -80,7 +86,9 @@ $menu-min-width: 200px;
 
 // Shadows
 // ===================================
-$shadow-menu: 0 4px 16px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(0, 0, 0, 0.08);
+$shadow-menu:
+  0 4px 16px rgba(0, 0, 0, 0.1),
+  0 2px 8px rgba(0, 0, 0, 0.08);
 
 // Transitions
 // ===================================

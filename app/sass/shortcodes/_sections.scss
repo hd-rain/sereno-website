@@ -2,7 +2,7 @@
 // Section Background Shortcodes
 // ===================================
 
-.section-bg-white {
+.section-white {
   color: $primary-brown;
   background-color: $background-white;
   padding: $spacing-md 0;
@@ -12,7 +12,7 @@
   }
 }
 
-.section-bg-light {
+.section-light {
   color: $primary-brown;
   background-color: $background-light;
   padding: $spacing-md 0;
@@ -22,7 +22,7 @@
   }
 }
 
-.section-bg-icy {
+.section-icy {
   color: $primary-brown;
   background-color: $background-icy;
   padding: $spacing-md 0;
@@ -32,12 +32,21 @@
   }
 }
 
-.section-bg-salmon {
-  background-color: $background-salmon;
+.section-orange {
+  background-color: $background-orange-2;
   color: $secondary-icy;
   padding: $spacing-md 0;
 
   h2 {
     color: $secondary-icy;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    h2 {
+      text-align: right;
+    }
+    p:has(em) {
+      text-align: right;
+    }
   }
 }

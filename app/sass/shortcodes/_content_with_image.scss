@@ -14,6 +14,27 @@
   }
 }
 
+.content-with-image-reversed {
+  @extend .content-with-image;
+
+  @media (min-width: $breakpoint-tablet) {
+    grid-template-columns: 1fr 2fr;
+    align-items: end;
+  }
+
+  .content-text {
+    @media (min-width: $breakpoint-tablet) {
+      order: 2;
+    }
+  }
+
+  .content-visual {
+    @media (min-width: $breakpoint-tablet) {
+      order: 1;
+    }
+  }
+}
+
 // Global content image styling (reusable across shortcodes)
 .content-visual {
   display: flex;

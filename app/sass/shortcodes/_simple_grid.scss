@@ -2,7 +2,7 @@
 // Features Grid Shortcode
 // ===================================
 
-.features-grid {
+.simple-grid {
   padding: $spacing-sm 0;
   display: grid;
   grid-template-columns: 1fr;
@@ -10,6 +10,6 @@
 
   @media (min-width: $breakpoint-tablet) {
     grid-template-columns: 1fr 1fr;
-    gap: $spacing-lg;
+    gap: $spacing-md;
   }
 }

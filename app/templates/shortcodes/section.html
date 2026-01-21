@@ -1,4 +1,4 @@
-<div class="section-bg-light">
+<div class="section-{{ type | default(value="white") }}">
     <div class="container">
         {{ body | markdown | safe }}
     </div>

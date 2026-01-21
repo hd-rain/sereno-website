@@ -10,13 +10,13 @@ hero_image = "/images/construction.webp"
 hero_sub_heading = "Interruptions is a structural challenge across the construction sector.Sereno offers a dedicated cover aligned with how construction businesses actually operate."
 +++
 
-{% section_white() %}
+{% section() %}
 
 ## A trusted partner for brokers
 
 _Partner with confidence. We make parametric insurance accessible and reliable._
 
-{% features_grid() %}
+{% simple_grid() %}
 
 {% value_card(title="Solid", subtitle="Strong capacity behind us.", icon="shield") %}
 Robust, transparent, and designed for long‑term reliability. We operate as an MGA with committed, highly rated insurance partners.
@@ -36,7 +36,7 @@ Modular structures, adjustable limits, and scalable capacity to complement exist
 {% end %}
 {% end %}
 
-{% section_light() %}
+{% section(type="light") %}
 
 ## Empower your clients’ financial resilience
 
@@ -51,7 +51,7 @@ Designed to complement traditional insurance, Sereno’s parametric solutions ar
 When disruption hits, your clients get certainty when it matters most.
 {% end %}
 
-{% section_white() %}
+{% section() %}
 
 {% content_with_image(image="/images/weather.webp", alt="Weather data experts working on meteorological analysis") %}
 
@@ -67,11 +67,11 @@ Backed by a team of experienced meteorologists and climate scientists who contin
 
 {% end %}
 
-{% section_light() %}
+{% section(type="light") %}
 
 ##
 
-{% features_grid_with_image(title="Tech add value for your customers", image_1="/images/assessment.webp", alt_1="A screenshot of risk assessment from our platform", image_2="/images/monitoring.webp", alt_2="A screenshot of risk monitoring from our platform") %}
+{% simple_grid_with_image(title="Tech add value for your customers", image_1="/images/assessment.webp", alt_1="A screenshot of risk assessment from our platform", image_2="/images/monitoring.webp", alt_2="A screenshot of risk monitoring from our platform") %}
 
 {% feature_card(title="Portfolio‑level monitoring", subtitle="See the bigger picture.") %}
 
