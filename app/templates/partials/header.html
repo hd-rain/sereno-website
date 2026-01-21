@@ -27,7 +27,7 @@
                         {% for industry in config.extra.industries %}
                         {% if industry.slug != "" %}
                         <a href="{{ get_url(path=industry.url) }}"
-                            class="dropdown-item {% if (page.extra and page.extra.industry == industry.slug) or (section.extra and section.extra.industry == industry.slug) %}active{% endif %}">{{ industry.label }}</a>
+                            class="dropdown-item {% if (page.extra and page.extra.industry and page.extra.industry == industry.slug) or (section.extra and section.extra.industry and section.extra.industry == industry.slug) %}active{% endif %}">{{ industry.label }}</a>
                         {% endif %}
                         {% endfor %}
                     </div>
@@ -76,7 +76,7 @@
                         {% for industry in config.extra.industries %}
                         {% if industry.slug != "" %}
                         <a href="{{ get_url(path=industry.url) }}"
-                            class="mobile-nav-link {% if (page.extra and page.extra.industry == industry.slug) or (section.extra and section.extra.industry == industry.slug) %}active{% endif %}">{{ industry.label }}</a>
+                            class="mobile-nav-link {% if (page.extra and page.extra.industry and page.extra.industry == industry.slug) or (section.extra and section.extra.industry and section.extra.industry == industry.slug) %}active{% endif %}">{{ industry.label }}</a>
                         {% endif %}
                         {% endfor %}
                     </div>

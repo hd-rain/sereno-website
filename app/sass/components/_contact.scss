@@ -1,0 +1,230 @@
+// ===================================
+// Contact Form Components
+// Mobile-first responsive design
+// ===================================
+
+.contact-hero {
+  text-align: left;
+  margin: $spacing-md auto;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin-bottom: $spacing-lg auto;
+  }
+
+  h1 {
+    text-align: center;
+    color: $primary-brown;
+  }
+
+  .lead {
+    margin: 0 auto;
+    color: $text-primary;
+    font-size: 1.125rem;
+    line-height: $line-height-body;
+    max-width: 600px;
+  }
+}
+
+.contact-content {
+  margin: $spacing-lg 0;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+
+  @media (min-width: $breakpoint-tablet) {
+    flex-direction: row-reverse;
+    gap: $spacing-xl;
+    align-items: flex-start;
+  }
+}
+
+.contact-info {
+  flex: 1;
+
+  h2 {
+    margin-bottom: $spacing-md;
+    font-size: $font-size-h3;
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: $font-size-h2;
+    }
+  }
+
+  p {
+    color: $primary-brown;
+    line-height: $line-height-body;
+    margin-bottom: $spacing-md;
+  }
+}
+
+.contact-features {
+  .contact-feature {
+    h3 {
+      color: $primary-brown;
+      font-size: 1.125rem;
+      margin-bottom: $spacing-xs;
+      font-weight: 600;
+    }
+
+    p {
+      color: $primary-brown;
+      margin-bottom: $spacing-sm;
+    }
+  }
+}
+
+.contact-form-wrapper {
+  flex: 1;
+  max-width: 100%;
+
+  @media (min-width: $breakpoint-tablet) {
+    max-width: 500px;
+  }
+}
+
+.contact-form {
+  background: $background-light;
+  padding: $spacing-md;
+  border-radius: $border-radius-md;
+  box-shadow: $shadow-menu;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: $spacing-lg;
+  }
+}
+
+.form-group {
+  margin-bottom: $spacing-md;
+
+  &--half {
+    @media (min-width: $breakpoint-tablet) {
+      display: inline-block;
+      width: calc(50% - #{$spacing-xs});
+      margin-right: $spacing-sm;
+
+      &:nth-child(even) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &--checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: $spacing-xs;
+    margin-bottom: $spacing-sm;
+  }
+}
+
+.form-label {
+  display: block;
+  color: $text-primary;
+  font-weight: 600;
+  margin-bottom: $spacing-xs;
+  font-size: $font-size-small;
+}
+
+.form-hint {
+  display: block;
+  color: $text-secondary;
+  font-size: 0.75rem;
+  margin-top: 4px;
+  font-style: italic;
+}
+
+.form-input {
+  width: 100%;
+  padding: $spacing-sm;
+  border: 2px solid $border-light;
+  border-radius: $border-radius-sm;
+  font-size: $font-size-body;
+  font-family: $font-primary;
+  transition:
+    border-color $transition-fast,
+    box-shadow $transition-fast;
+
+  &:focus {
+    outline: none;
+    border-color: $primary-brown;
+    box-shadow: 0 0 0 3px rgba($primary-brown, 0.1);
+  }
+
+  &:invalid {
+    border-color: #e53e3e;
+  }
+
+  // Ensure intl-tel-input integration
+  &[type="tel"] {
+    padding-left: 52px; // Space for country flag
+  }
+}
+
+.form-checkbox {
+  min-width: 16px;
+  min-height: 16px;
+  margin: 0;
+  accent-color: $primary-brown;
+}
+
+.form-checkbox-label {
+  color: $text-secondary;
+  font-size: $font-size-small;
+  line-height: $line-height-body;
+  margin: 0;
+  cursor: pointer;
+
+  .privacy-link {
+    color: $primary-brown;
+    text-decoration: underline;
+
+    &:hover {
+      color: $highlight-brown;
+    }
+  }
+}
+
+.form-message {
+  margin-top: $spacing-sm;
+
+  .form-success {
+    color: $success;
+    background: rgba($success, 0.1);
+    padding: $spacing-sm;
+    border-radius: $border-radius-sm;
+    border-left: 4px solid $success;
+    margin: 0;
+  }
+
+  .form-error {
+    color: #e53e3e;
+    background: rgba(#e53e3e, 0.1);
+    padding: $spacing-sm;
+    border-radius: $border-radius-sm;
+    border-left: 4px solid #e53e3e;
+    margin: 0;
+  }
+}
+
+// intl-tel-input customization
+.iti {
+  width: 100%;
+
+  .iti__country-list {
+    z-index: 1000;
+    border-radius: $border-radius-sm;
+    box-shadow: $shadow-menu;
+  }
+
+  .iti__selected-flag {
+    padding: 0 8px;
+  }
+
+  .iti__arrow {
+    border-left-color: $text-secondary;
+    border-right-color: $text-secondary;
+  }
+
+  &.iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag {
+    background-color: rgba($primary-brown, 0.05);
+  }
+}
