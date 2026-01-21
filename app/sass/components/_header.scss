@@ -86,7 +86,9 @@
   .nav-link {
     font-weight: 500;
     padding: $spacing-xs $spacing-sm;
-    transition: color $transition-fast, transform $transition-fast;
+    transition:
+      color $transition-fast,
+      transform $transition-fast;
     position: relative;
 
     &:hover {
@@ -125,11 +127,20 @@
     font-size: inherit;
     font-weight: 500;
     padding: $spacing-xs $spacing-sm;
-    transition: color $transition-fast, transform $transition-fast;
+    transition:
+      color $transition-fast,
+      transform $transition-fast;
 
     &:hover {
       color: $primary-brown;
       transform: translateY(-1px);
+    }
+
+    .dropdown-arrow {
+      display: inline-block;
+      transform: rotate(90deg) translateX(2px);
+      transition: transform $transition-fast;
+      margin-left: $spacing-xs;
     }
   }
 
@@ -146,7 +157,9 @@
     opacity: 0;
     visibility: hidden;
     transform: translateY(-$spacing-sm);
-    transition: opacity $transition-fast, visibility $transition-fast,
+    transition:
+      opacity $transition-fast,
+      visibility $transition-fast,
       transform $transition-fast;
     z-index: $z-dropdown;
     padding: $spacing-xs 0;
@@ -157,7 +170,9 @@
     padding: $spacing-xs $spacing-sm;
     color: $text-primary;
     text-decoration: none;
-    transition: color $transition-fast, transform $transition-fast;
+    transition:
+      color $transition-fast,
+      transform $transition-fast;
     font-size: $font-size-body;
 
     &:hover {
@@ -192,7 +207,9 @@
   opacity: 0;
   visibility: hidden;
   transform: translateY(-$spacing-sm);
-  transition: opacity $transition-fast, visibility $transition-fast,
+  transition:
+    opacity $transition-fast,
+    visibility $transition-fast,
     transform $transition-fast;
   z-index: $z-mobile-nav;
   padding: $spacing-xs 0;
@@ -215,7 +232,9 @@
     color: $text-primary;
     text-decoration: none;
     font-weight: 500;
-    transition: background $transition-fast, color $transition-fast;
+    transition:
+      background $transition-fast,
+      color $transition-fast;
 
     &:hover {
       color: $primary-brown;
@@ -234,7 +253,9 @@
     font-weight: 500;
     color: $text-primary;
     cursor: pointer;
-    transition: background $transition-fast, color $transition-fast;
+    transition:
+      background $transition-fast,
+      color $transition-fast;
 
     &:hover {
       background: $background-light;
@@ -257,7 +278,9 @@
       padding: $spacing-xs $spacing-sm;
       color: $text-primary;
       text-decoration: none;
-      transition: color $transition-fast, transform $transition-fast;
+      transition:
+        color $transition-fast,
+        transform $transition-fast;
 
       &:hover {
         color: $primary-brown;
@@ -277,6 +300,8 @@
 
   // Shared arrow transition for both open/close states
   .mobile-nav-toggle .arrow {
+    display: inline-block;
+    transform: rotate(90deg) translateX(2px);
     transition: transform $transition-fast;
   }
 
@@ -289,7 +314,7 @@
     display: none;
 
     .arrow {
-      transform: rotate(180deg);
+      transform: rotate(270deg) translateX(2px);
     }
   }
 

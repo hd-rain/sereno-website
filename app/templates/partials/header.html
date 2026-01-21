@@ -1,4 +1,3 @@
-
 <header class="header">
     <div class="container">
         <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox">
@@ -21,13 +20,14 @@
             <nav class="tablet-plus-nav">
                 <div class="dropdown">
                     <button class="dropdown-toggle nav-link" type="button" id="industries-dropdown">
-                        Industries ▼
+                        Industries <span class="dropdown-arrow">»</span>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="industries-dropdown">
                         {% for industry in config.extra.industries %}
                         {% if industry.slug != "" %}
                         <a href="{{ get_url(path=industry.url) }}"
-                            class="dropdown-item {% if (page.extra and page.extra.industry == industry.slug) or (section.extra and section.extra.industry == industry.slug) %}active{% endif %}">{{ industry.label }}</a>
+                            class="dropdown-item {% if (page.extra and page.extra.industry == industry.slug) or (section.extra and section.extra.industry == industry.slug) %}active{% endif %}">{{
+                            industry.label }}</a>
                         {% endif %}
                         {% endfor %}
                     </div>
@@ -35,7 +35,7 @@
 
                 <div class="dropdown">
                     <button class="dropdown-toggle nav-link" type="button" id="resources-dropdown">
-                        Resources ▼
+                        Resources <span class="dropdown-arrow">»</span>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="resources-dropdown">
                         <a href="#" class="dropdown-item">Coming Soon</a>
@@ -44,7 +44,7 @@
 
                 <div class="dropdown">
                     <button class="dropdown-toggle nav-link" type="button" id="company-dropdown">
-                        Company ▼
+                        Company <span class="dropdown-arrow">»</span>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="company-dropdown">
                         <a href="{{ get_url(path='/about/') }}" class="dropdown-item">About</a>
@@ -67,16 +67,17 @@
                 <div class="mobile-nav-item">
                     <input type="radio" id="mobile-industries-toggle" name="mobile-nav" class="mobile-submenu-radio">
                     <label for="mobile-industries-toggle" class="mobile-nav-toggle mobile-nav-open">
-                        Industries <span class="arrow">▼</span>
+                        Industries <span class="arrow">»</span>
                     </label>
                     <label for="mobile-nav-close" class="mobile-nav-toggle mobile-nav-close">
-                        Industries <span class="arrow">▼</span>
+                        Industries <span class="arrow">»</span>
                     </label>
                     <div class="mobile-nav-submenu">
                         {% for industry in config.extra.industries %}
                         {% if industry.slug != "" %}
                         <a href="{{ get_url(path=industry.url) }}"
-                            class="mobile-nav-link {% if (page.extra and page.extra.industry == industry.slug) or (section.extra and section.extra.industry == industry.slug) %}active{% endif %}">{{ industry.label }}</a>
+                            class="mobile-nav-link {% if (page.extra and page.extra.industry == industry.slug) or (section.extra and section.extra.industry == industry.slug) %}active{% endif %}">{{
+                            industry.label }}</a>
                         {% endif %}
                         {% endfor %}
                     </div>
@@ -85,10 +86,10 @@
                 <div class="mobile-nav-item">
                     <input type="radio" id="mobile-resources-toggle" name="mobile-nav" class="mobile-submenu-radio">
                     <label for="mobile-resources-toggle" class="mobile-nav-toggle mobile-nav-open">
-                        Resources <span class="arrow">▼</span>
+                        Resources <span class="arrow">»</span>
                     </label>
                     <label for="mobile-nav-close" class="mobile-nav-toggle mobile-nav-close">
-                        Resources <span class="arrow">▼</span>
+                        Resources <span class="arrow">»</span>
                     </label>
                     <div class="mobile-nav-submenu">
                         <a href="#" class="mobile-nav-link">Coming Soon</a>
@@ -98,10 +99,10 @@
                 <div class="mobile-nav-item">
                     <input type="radio" id="mobile-company-toggle" name="mobile-nav" class="mobile-submenu-radio">
                     <label for="mobile-company-toggle" class="mobile-nav-toggle mobile-nav-open">
-                        Company <span class="arrow">▼</span>
+                        Company <span class="arrow">»</span>
                     </label>
                     <label for="mobile-nav-close" class="mobile-nav-toggle mobile-nav-close">
-                        Company <span class="arrow">▼</span>
+                        Company <span class="arrow">»</span>
                     </label>
                     <div class="mobile-nav-submenu">
                         <a href="{{ get_url(path='/about/') }}" class="mobile-nav-link">About</a>
