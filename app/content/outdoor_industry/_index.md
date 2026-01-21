@@ -14,6 +14,8 @@ hero_sub_heading = "Outdoor activities rely on favourable conditions to operate 
 
 ## A trusted partner for brokers
 
+_Partner with confidence. We make parametric insurance accessible and reliable._
+
 {% features_grid() %}
 
 {% value_card(title="Solid", subtitle="Strong capacity behind us.", icon="shield") %}

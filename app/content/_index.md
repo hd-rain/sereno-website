@@ -7,6 +7,8 @@ description = "Fast, transparent parametric insurance covering weather-related b
 
 ## A trusted partner for brokers
 
+_Partner with confidence. We make parametric insurance accessible and reliable._
+
 {% features_grid() %}
 
 {% value_card(title="Solid", subtitle="Strong capacity behind us.", icon="shield") %}
@@ -44,19 +46,21 @@ When disruption hits, your clients get certainty when it matters most.
 
 {% section_white() %}
 
+{% content_with_image(image="/images/weather.webp", alt="Weather data experts working on meteorological analysis") %}
+
 ## Unique weather data expertise
 
 _Reducing basis risk with superior data and proven expertise._
 
-Historical data is no longer enough. Our proprietary algorithms account for climate change trends to price your risk fairly for tomorrow, not yesterday.We don't only rely on generic airport weather stations. We fuse satellite imagery, radar, and IoT sensors to model risk exactly where your assets are.
+Historical data is no longer enough. Our proprietary algorithms account for climate change trends to price your risk fairly for tomorrow, not yesterday. We don't only rely on generic airport weather stations. We fuse satellite imagery, radar, and IoT sensors to model risk exactly where your assets are.
 
-Backed by a team of experienced meteorologists and climate scientists who continuously validate assumptions, refine models, and ensure scientific rigor at every step.The gap between "weather at the station" and "weather at your site" costs you money. We close that gap.
+Backed by a team of experienced meteorologists and climate scientists who continuously validate assumptions, refine models, and ensure scientific rigor at every step. The gap between "weather at the station" and "weather at your site" costs you money. We close that gap.
+
+{% end %}
 
 {% end %}
 
 {% section_light() %}
-
-##
 
 {% features_grid_with_image(title="Tech add value for your customers", image_1="/images/assessment.webp", alt_1="A screenshot of risk assessment from our platform", image_2="/images/monitoring.webp", alt_2="A screenshot of risk monitoring from our platform") %}
 

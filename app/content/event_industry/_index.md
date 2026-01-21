@@ -14,6 +14,8 @@ hero_sub_heading = "Coming soon."
 
 ## A trusted partner for brokers
 
+_Partner with confidence. We make parametric insurance accessible and reliable._
+
 {% features_grid() %}
 
 {% value_card(title="Solid", subtitle="Strong capacity behind us.", icon="shield") %}
