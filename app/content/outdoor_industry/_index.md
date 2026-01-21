@@ -7,7 +7,7 @@ template = "industry.html"
 industry = "outdoor_industry"
 risk = "losses in outdoor industry"
 hero_image = "/images/outdoor_industry.webp"
-hero_sub_heading = "Outdoor activities rely on favourable conditions to operate and attract customers. Sereno provides financial protection for businesses whose performance depends on the weather."
+hero_sub_heading = "Outdoor activities rely on favourable conditions to operate and attract customers.Sereno provides financial protection for businesses whose performance depends on the weather."
 +++
 
 {% section_white() %}
@@ -16,19 +16,19 @@ hero_sub_heading = "Outdoor activities rely on favourable conditions to operate 
 
 {% features_grid() %}
 
-{% feature_card(title="Solid", subtitle="Strong capacity behind us.") %}
+{% value_card(title="Solid", subtitle="Strong capacity behind us.", icon="shield") %}
 Robust, transparent, and designed for long‑term reliability. We operate as an MGA with committed, highly rated insurance partners.
 {% end %}
 
-{% feature_card(title="Simple", subtitle="Speed without friction.") %}
+{% value_card(title="Simple", subtitle="Speed without friction.", icon="zap") %}
 Easy to explain, fast to place and ready to deploy. Clear coverage, objective triggers, and automated payouts from quote to settlement.
 {% end %}
 
-{% feature_card(title="Innovative", subtitle="Unlock uninsured protection gaps.") %}
+{% value_card(title="Innovative", subtitle="Unlock uninsured protection gaps.", icon="lightbulb") %}
 Our parametric approach closes previously uninsurable or under‑insured protection gaps with data‑driven precision.
 {% end %}
 
-{% feature_card(title="Flexible", subtitle="Adaptive and tailored.") %}
+{% value_card(title="Flexible", subtitle="Adaptive and tailored.", icon="sliders") %}
 Modular structures, adjustable limits, and scalable capacity to complement existing programs and meet real clients needs.
 {% end %}
 {% end %}
