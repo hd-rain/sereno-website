@@ -6,7 +6,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 $spacing-sm;
+  padding: $spacing-sm;
+  gap: $spacing-xs;
 }
 
 .dot {
@@ -15,8 +16,6 @@
   justify-content: center;
   width: $spacing-md;
   height: $spacing-md;
-  text-decoration: none;
-  cursor: pointer;
 
   &::before {
     content: "";
@@ -25,12 +24,11 @@
     height: $spacing-xs;
     border-radius: 50%;
     background: $primary-brown;
-    transition: transform $transition-fast, background $transition-fast;
+    transition:
+      transform $transition-fast,
+      background $transition-fast;
   }
 
-  &:hover::before {
-    background: $highlight-brown;
-  }
 
   &.dot--active::before {
     background: $highlight-brown;
@@ -42,6 +40,35 @@
 
     &:hover,
     &.dot--active {
+      transform: none;
+    }
+  }
+}
+
+.nav-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $spacing-md;
+  height: $spacing-md;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  color: $primary-brown;
+  line-height: 1;
+  margin-top: -2px;
+  transition:
+    color $transition-fast,
+    transform $transition-fast;
+  cursor: pointer;
+
+  &:hover {
+    color: $highlight-brown;
+    transform: translateY(-1px);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &:hover {
       transform: none;
     }
   }
