@@ -42,16 +42,7 @@
                     </div>
                 </div>
 
-                <div class="dropdown">
-                    <button class="dropdown-toggle nav-link" type="button" id="company-dropdown">
-                        Company <span class="dropdown-arrow">»</span>
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="company-dropdown">
-                        <a href="{{ get_url(path='/about/') }}" class="dropdown-item">About</a>
-                        <a href="{{ get_url(path='/careers/') }}" class="dropdown-item">Careers</a>
-                        <a href="{{ get_url(path='/contact/') }}" class="dropdown-item">Contact</a>
-                    </div>
-                </div>
+                <a href="{{ get_url(path='/about/') }}" class="nav-link">About »</a>
             </nav>
             <!--eo TABLET+ SPECIFIC STRUCTURE -->
 
@@ -97,18 +88,7 @@
                 </div>
 
                 <div class="mobile-nav-item">
-                    <input type="radio" id="mobile-company-toggle" name="mobile-nav" class="mobile-submenu-radio">
-                    <label for="mobile-company-toggle" class="mobile-nav-toggle mobile-nav-open">
-                        Company <span class="arrow">»</span>
-                    </label>
-                    <label for="mobile-nav-close" class="mobile-nav-toggle mobile-nav-close">
-                        Company <span class="arrow">»</span>
-                    </label>
-                    <div class="mobile-nav-submenu">
-                        <a href="{{ get_url(path='/about/') }}" class="mobile-nav-link">About</a>
-                        <a href="{{ get_url(path='/careers/') }}" class="mobile-nav-link">Careers</a>
-                        <a href="{{ get_url(path='/contact/') }}" class="mobile-nav-link">Contact</a>
-                    </div>
+                    <a href="{{ get_url(path='/about/') }}" class="mobile-nav-home-link">About</a>
                 </div>
             </nav>
             <!-- eo MOBILE SPECIFIC STRUCTURE -->
