@@ -1,0 +1,18 @@
+// ===================================
+// Column Shortcode
+// ===================================
+
+.simple-column {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.simple-column-reversed {
+  @extend .simple-column;
+
+  @media (min-width: $breakpoint-tablet) {
+    order: 999;
+    align-self: start;
+  }
+}

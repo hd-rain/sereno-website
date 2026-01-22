@@ -58,11 +58,14 @@
 
     @media (min-width: $breakpoint-tablet) {
       display: flex;
+      align-items: center;
     }
   }
 
   .logo-text {
-    font-size: $font-size-h2;
+    font-size: $font-size-lg;
+    line-height: $line-height-icon;
+    letter-spacing: -0.05rem;
     font-weight: 500;
     color: $primary-brown;
   }
@@ -85,6 +88,7 @@
 
   .nav-link {
     font-weight: 500;
+    font-size: $font-size-sm;
     padding: $spacing-xs $spacing-sm;
     transition:
       color $transition-fast,
@@ -124,7 +128,7 @@
     border: none;
     cursor: pointer;
     font-family: inherit;
-    font-size: inherit;
+    font-size: $font-size-sm;
     font-weight: 500;
     padding: $spacing-xs $spacing-sm;
     transition:
@@ -168,12 +172,12 @@
   .dropdown-item {
     display: block;
     padding: $spacing-xs $spacing-sm;
-    color: $text-primary;
+    color: $text-darkgray;
     text-decoration: none;
     transition:
       color $transition-fast,
       transform $transition-fast;
-    font-size: $font-size-body;
+    font-size: $font-size-xs;
 
     &:hover {
       color: $primary-brown;
@@ -229,9 +233,10 @@
   .mobile-nav-home-link {
     display: block;
     padding: $spacing-sm $spacing-md;
-    color: $text-primary;
+    color: $text-darkgray;
     text-decoration: none;
     font-weight: 500;
+    font-size: $font-size-sm;
     transition:
       background $transition-fast,
       color $transition-fast;
@@ -250,8 +255,9 @@
     background: none;
     border: none;
     font-family: inherit;
+    font-size: $font-size-sm;
     font-weight: 500;
-    color: $text-primary;
+    color: $text-darkgray;
     cursor: pointer;
     transition:
       background $transition-fast,
@@ -264,7 +270,7 @@
 
     .arrow {
       transition: transform $transition-fast;
-      font-size: $font-size-small;
+      font-size: $font-size-xs;
     }
   }
 
@@ -276,7 +282,7 @@
     .mobile-nav-link {
       display: block;
       padding: $spacing-xs $spacing-sm;
-      color: $text-primary;
+      color: $text-darkgray;
       text-decoration: none;
       transition:
         color $transition-fast,

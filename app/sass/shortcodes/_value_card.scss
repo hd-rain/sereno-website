@@ -42,7 +42,11 @@
   }
 
   h4 {
+    @extend h3;
+    text-align: left;
+  }
+
+  .value-card-subtitle {
     font-style: italic;
-    color: $highlight-brown;
   }
 }

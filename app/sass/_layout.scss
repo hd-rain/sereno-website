@@ -13,9 +13,9 @@
 
 body {
   font-family: $font-primary;
-  font-size: $font-size-body;
+  font-size: $font-size-xs;
   line-height: $line-height-body;
-  color: $text-primary;
+  color: $primary-brown;
   background-color: $background-white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -37,37 +37,38 @@ body {
 // Typography
 // ===================================
 h1 {
-  font-size: $font-size-h1;
+  font-size: $font-size-xl;
   line-height: $line-height-heading;
   font-weight: 700;
   margin-bottom: $spacing-sm;
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: $font-size-xxl;
+  }
 }
 
 h2 {
-  color: $primary-brown;
-  font-size: $font-size-h2;
+  font-size: $font-size-lg;
   line-height: $line-height-heading;
   font-weight: 600;
   text-align: center;
   margin-bottom: $spacing-sm;
 
   @media (min-width: $breakpoint-tablet) {
-    &:not(.cta-last-chance) {
-      text-align: left;
-    }
+    font-size: $font-size-xl;
   }
 }
 
 h3 {
-  color: $primary-brown;
-  font-size: $font-size-h3;
+  text-align: center;
+  font-size: $font-size-md;
   line-height: $line-height-heading;
   font-weight: 600;
   margin-bottom: $spacing-sm;
 }
 
 h4 {
-  color: $primary-brown;
+  font-size: $font-size-sm;
   line-height: $line-height-heading;
   font-weight: 500;
   margin-bottom: $spacing-xs;
@@ -141,7 +142,6 @@ a {
     margin-bottom: $spacing-sm;
 
     .hero-line-1 {
-      color: $primary-brown;
       display: block;
       font-weight: 600;
     }
@@ -163,11 +163,10 @@ a {
 
   p {
     margin-bottom: 0;
-    color: $text-secondary;
-    font-size: $font-size-body;
+    font-size: $font-size-sm;
 
     @media (min-width: $breakpoint-tablet) {
-      font-size: calc($font-size-body * 1.2);
+      font-size: calc($font-size-sm * 1.2);
     }
   }
 

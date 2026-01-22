@@ -1,4 +1,3 @@
-
 <div class="container">
     <div class="dots-container">
         {% set current_index = 0 %}
@@ -8,7 +7,8 @@
         {% set_global current_index = loop.index0 %}
         {% endif %}
         {% else %}
-        {% if (page.extra and page.extra.industry == industry.slug) or (section.extra and section.extra.industry == industry.slug) %}
+        {% if (page.extra and page.extra.industry == industry.slug) or (section.extra and section.extra.industry ==
+        industry.slug) %}
         {% set_global current_index = loop.index0 %}
         {% endif %}
         {% endif %}
@@ -20,27 +20,25 @@
         {% else %}
         {% set prev_index = current_index - 1 %}
         {% endif %}
-        
+
         {% if current_index == total_industries - 1 %}
         {% set next_index = 0 %}
         {% else %}
         {% set next_index = current_index + 1 %}
         {% endif %}
-        
+
         <!-- Previous button -->
-        <a href="{{ get_url(path=config.extra.industries[prev_index].url) }}" 
-           class="nav-arrow nav-arrow--prev" 
-           aria-label="Previous: {{ config.extra.industries[prev_index].label }}">«</a>
+        <a href="{{ get_url(path=config.extra.industries[prev_index].url) }}" class="nav-arrow nav-arrow--prev"
+            aria-label="Previous: {{ config.extra.industries[prev_index].label }}">«</a>
 
         {% for industry in config.extra.industries %}
-        <span class="dot {% if industry.slug == "" %}{% if not page.extra.industry and not section.extra.industry %}dot--active{% endif %}{% else %}{% if (page.extra and page.extra.industry == industry.slug) or (section.extra and section.extra.industry == industry.slug) %}dot--active{% endif %}{% endif %}"
-            aria-label="{{ industry.label }}{% if industry.slug != '' %} industry solutions{% else %} page{% endif %}">
+        <span
+            class="dot {% if industry.slug == "" %}{% if not page.extra.industry and not section.extra.industry %}dot--active{% endif %}{% else %}{% if (page.extra and page.extra.industry == industry.slug) or (section.extra and section.extra.industry == industry.slug) %}dot--active{% endif %}{% endif %}">
         </span>
         {% endfor %}
 
         <!-- Next button -->
-        <a href="{{ get_url(path=config.extra.industries[next_index].url) }}" 
-           class="nav-arrow nav-arrow--next" 
-           aria-label="Next: {{ config.extra.industries[next_index].label }}">»</a>
+        <a href="{{ get_url(path=config.extra.industries[next_index].url) }}" class="nav-arrow nav-arrow--next"
+            aria-label="Next: {{ config.extra.industries[next_index].label }}">»</a>
     </div>
 </div>

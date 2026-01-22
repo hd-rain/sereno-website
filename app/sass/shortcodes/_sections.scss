@@ -22,28 +22,12 @@
   }
 }
 
-.section-icy {
-  color: $primary-brown;
-  background-color: $background-icy;
+.section-brown {
+  background-color: $background-brown;
+  color: $secondary-light;
   padding: $spacing-md 0;
 
   &:last-of-type {
     padding-bottom: 0;
-  }
-}
-
-.section-orange {
-  background-color: $background-orange-2;
-  color: $secondary-icy;
-  padding: $spacing-md 0;
-
-  h2 {
-    color: $secondary-icy;
-  }
-
-  @media (min-width: $breakpoint-tablet) {
-    h2 {
-      text-align: right;
-    }
   }
 }

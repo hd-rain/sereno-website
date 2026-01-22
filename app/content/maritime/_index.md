@@ -14,7 +14,7 @@ hero_sub_heading = "Delays and extra costs caused by adverse weather are a daily
 
 ## A trusted partner for brokers
 
-_Partner with confidence. We make parametric insurance accessible and reliable._
+### Partner with confidence. We make parametric insurance accessible and reliable.
 
 {% simple_grid() %}
 
@@ -36,73 +36,80 @@ Modular structures, adjustable limits, and scalable capacity to complement exist
 {% end %}
 {% end %}
 
-{% section(type="light") %}
+{% section(type="brown") %}
+
+{% simple_grid() %}
+
+{% simple_column(reverse="true") %}
 
 ## Empower your clients’ financial resilience
 
-_Climate events don’t just cause damage. They disrupt revenue, margins, and liquidity._
+### Climate events don't just cause damage. They disrupt revenue, margins, and liquidity. Our parametric solutions complement traditional insurance.
 
-Designed to complement traditional insurance, Sereno’s parametric solutions are built to provide :
+{% end %}
 
-- Immediate liquidity following a qualifying event
-- Payouts based on objective triggers, no loss adjustment process
-- Predictable protection to stabilize cash flow and earnings
+{% simple_column() %}
+{% simple_list() %}
+{{ bullet_card(title="Immediate liquidity", subtitle="Following a qualifying event", icon="clock") }}
+{{ bullet_card(title="Objective triggers", subtitle="No loss adjustment process", icon="dollar") }}
+{{ bullet_card(title="Predictable protection", subtitle="Stabilize cash flowand earnings", icon="chart")}}
+{% end %}
 
 When disruption hits, your clients get certainty when it matters most.
+
+{% end %}
+{% end %}
+
 {% end %}
 
 {% section() %}
 
-{% content_with_image(image="/images/weather.webp", alt="Weather data experts working on meteorological analysis") %}
+{% simple_grid() %}
+
+{% simple_column() %}
 
 ## Unique weather data expertise
 
-_Reducing basis risk with superior data and proven expertise._
+### Reducing basis risk with superior data and proven expertise.
 
-Historical data is no longer enough. Our proprietary algorithms account for climate change trends to price your risk fairly for tomorrow, not yesterday. We don't only rely on generic airport weather stations. We fuse satellite imagery, radar, and IoT sensors to model risk exactly where your assets are.
-
-Backed by a team of experienced meteorologists and climate scientists who continuously validate assumptions, refine models, and ensure scientific rigor at every step. The gap between "weather at the station" and "weather at your site" costs you money. We close that gap.
+{% simple_list() %}
+{{ bullet_card(title="Climate-adjusted models", subtitle="Proprietary algorithms that account for climate change trends", icon="satellite", variant="light") }}
+{{ bullet_card(title="Multi-source data fusion", subtitle="Satellite imagery, radar, and IoT sensors for precise location risk", icon="radar", variant="light") }}
+{{ bullet_card(title="Team of weather experts", subtitle="Policies designed and validated by meteorologists and climate scientists", icon="researcher", variant="light") }}
+{% end %}
+The gap between "weather at the station" and "weather at your site" costs you money. We close that gap.
 
 {% end %}
 
+{% simple_column() %}
+
+{{ simple_image(image="/images/weather.webp", alt="Weather data experts working on meteorological analysis") }}
+
+{% end %}
+{% end %}
 {% end %}
 
 {% section(type="light") %}
 
-{% simple_grid_with_image(title="Tech add value for your customers", image_1="/images/assessment.webp", alt_1="A screenshot of risk assessment from our platform", image_2="/images/monitoring.webp", alt_2="A screenshot of risk monitoring from our platform") %}
+## Tech add value for your customers
 
-{% feature_card(title="Portfolio‑level monitoring", subtitle="See the bigger picture.") %}
+### More than policies—a complete platform to monitor your clients' exposure.
 
-The platform gives you a clear view across your portfolio:
+{{ simple_image(image="/images/monitoring.webp", alt="Weather data experts working on meteorological analysis", wide="true") }}
 
-- Active covers and limits
-- Exposure by region or peril
-- Events in progress and potential payouts
+{% simple_row() %}
 
-You gain visibility to support better advice, stronger renewals, and more strategic conversations.
-
+{% feature_card(title="Portfolio‑level monitoring", subtitle="See the bigger picture.", icon="activity") %}
+The platform gives you a clear view across your portfolio. You gain visibility to support better advice, stronger renewals, and more strategic conversations.
 {% end %}
 
-{% feature_card(title="Client‑specific triggers", subtitle="No generic assumptions.") %}
-
-Triggers are designed using your clients’ own exposure data.Thresholds are calibrated to real locations, assets, and risk profiles, ensuring a clear link between:
-
-- The weather event
-- The trigger
-- The client’s financial exposure
-
-This precision reduces basis risk and builds trust.
-
+{% feature_card(title="Client‑specific triggers", subtitle="No generic assumptions.", icon="bell") %}
+Triggers are designed using your clients’ own exposure data. This precision reduces basis risk and builds trust.
 {% end %}
 
-{% feature_card(title="Proactive alerts for your clients", subtitle="Stay ahead of climate events.") %}
-
-We monitor weather conditions in real time and send alerts:
-When a relevant event is forecasted
-As conditions evolve toward predefined thresholds
-When thresholds are reached or exceeded
-You can inform your clients early and act before impacts materialize.
-
+{% feature_card(title="Proactive alerts for your clients", subtitle="Stay ahead of climate events.", icon="target") %}
+We monitor weather conditions in real time and send alerts. You can inform your clients early and act before impacts materialize.
 {% end %}
+
 {% end %}
 {% end %}

@@ -6,25 +6,17 @@
 // Colors
 // ===================================
 $primary-brown: #5c3519; // Main brand color
-$secondary-icy: #e6ffff; // Icy blue, accents, secondary elements
 $secondary-light: #f5ffff;
-$highlight-brown: #c87337; // Highlight elements, CTAs
+$highlight-brown: #c87337;
+$text-darkgray: #2c2c2c; // Earthy dark gray
 
 // Backgrounds
 $background-light: #f5ffff; // Light frost tint
 $background-white: #ffffff; // Pure white sections
-$background-orange-1: #cfab8a;
-$background-orange-2: #c8a07c;
-$background-orange-3: #c8a07c;
-$background-icy: #e6ffff;
-
-// Text
-$text-primary: #2c2c2c; // Earthy dark gray
-$text-secondary: #5c5c5c; // Medium gray
+$background-brown: #5c3519;
 
 // Utility
 $border-light: #e0e0e0; // Subtle borders
-$success: #4a9b4a; // Confirmation states
 
 // Typography
 // ===================================
@@ -36,12 +28,14 @@ $font-primary:
   sans-serif;
 
 // Type Scale (Mobile-First)
-$font-size-h1: 3rem; // 48px
-$font-size-h2: 2.25rem; // 36px
-$font-size-h3: 1.5rem; // 24px
-$font-size-body: 1rem; // 16px
-$font-size-small: 0.875rem; // 14px
+$font-size-xxl: 3.25rem;
+$font-size-xl: 2.75rem;
+$font-size-lg: 2rem;
+$font-size-md: 1.25rem;
+$font-size-sm: 1rem;
+$font-size-xs: 0.875rem;
 
+$line-height-icon: 1;
 $line-height-heading: 1.2;
 $line-height-body: 1.6;
 
@@ -52,7 +46,6 @@ $spacing-xs: 0.5rem; // 8px
 $spacing-sm: 1rem; // 16px
 $spacing-md: 2rem; // 32px
 $spacing-lg: 4rem; // 64px
-$spacing-xl: 6rem; // 96px
 
 // Breakpoints (Mobile-First)
 // ===================================

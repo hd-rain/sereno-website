@@ -29,7 +29,6 @@
       background $transition-fast;
   }
 
-
   &.dot--active::before {
     background: $highlight-brown;
     transform: scale(1.5);
@@ -54,8 +53,7 @@
   text-decoration: none;
   font-size: 2rem;
   font-weight: 600;
-  color: $primary-brown;
-  line-height: 1;
+  line-height: $line-height-icon;
   margin-top: -2px;
   transition:
     color $transition-fast,
