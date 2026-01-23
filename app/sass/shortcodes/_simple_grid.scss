@@ -2,38 +2,42 @@
 // Grid Shortcode
 // ===================================
 
-.simple-grid-2 {
+.simple-grid {
   padding: $spacing-sm 0 $spacing-md 0;
   display: grid;
   grid-template-columns: 1fr;
   gap: $spacing-md;
 
   @media (min-width: $breakpoint-tablet) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: $spacing-md;
+  }
+}
+
+.simple-grid-1 {
+  @extend .simple-grid;
+}
+
+.simple-grid-2 {
+  @extend .simple-grid;
+
+  @media (min-width: $breakpoint-tablet) {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 .simple-grid-1-2 {
-  padding: $spacing-sm 0 $spacing-md 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: $spacing-md;
+  @extend .simple-grid;
 
   @media (min-width: $breakpoint-tablet) {
     grid-template-columns: 1fr 2fr;
-    gap: $spacing-md;
   }
 }
 
 .simple-grid-3 {
-  padding: $spacing-sm 0 $spacing-md 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: $spacing-md;
+  @extend .simple-grid;
 
   @media (min-width: $breakpoint-tablet) {
     grid-template-columns: 1fr 1fr 1fr;
-    gap: $spacing-md;
   }
 }

@@ -44,7 +44,9 @@ Modular structures, adjustable limits, and scalable capacity to complement exist
 
 ## Empower your clients’ financial resilience
 
-### Climate events don't just cause damage. They disrupt revenue, margins, and liquidity. Our parametric solutions complement traditional insurance.
+### Climate events don't just cause damage. They disrupt revenue, margins, and liquidity.
+
+Our parametric solutions complement traditional insurance.
 
 {% end %}
 

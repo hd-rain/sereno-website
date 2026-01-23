@@ -57,7 +57,7 @@ h2 {
 
   @media (min-width: $breakpoint-tablet) {
     font-size: $font-size-xl;
-    margin-bottom: $spacing-lg;
+    margin: $spacing-md 0;
   }
 }
 
@@ -67,10 +67,6 @@ h3 {
   line-height: $line-height-heading;
   font-weight: 600;
   margin-bottom: $spacing-sm;
-
-  @media (min-width: $breakpoint-tablet) {
-    margin-bottom: $spacing-md;
-  }
 }
 
 h4 {
