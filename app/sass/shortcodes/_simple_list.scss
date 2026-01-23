@@ -1,13 +1,23 @@
 // ===================================
-// Bullet Card Shortcode
+// Unordered List Shortcode
 // ===================================
 
-.simple-list {
+.simple-list-1 {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-sm;
+  padding-bottom: $spacing-sm;
+}
+
+.simple-list-2 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: $spacing-sm;
   padding-bottom: $spacing-sm;
 }

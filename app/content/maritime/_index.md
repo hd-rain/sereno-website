@@ -101,7 +101,7 @@ The atmosphere is changing. A warmer climate produces sharper contrasts and more
 
 ### We don't just insure your assets; we insure your time.
 
-{% simple_grid() %}
+{% simple_list(count="2") %}
 {{ bullet_card(title="180+", subtitle="Ports covered worldwide", icon="globe", variant="light") }}
 {{ bullet_card(title="60min", subtitle="Data resolution", icon="clock-1", variant="light") }}
 {{ bullet_card(title="Custom", subtitle="Port coordinates", icon="map-pin", variant="light") }}

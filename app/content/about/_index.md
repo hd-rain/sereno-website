@@ -8,6 +8,8 @@ template = "page.html"
 
 # About Sereno
 
+## Our mission is hardwired into our DNA
+
 Sereno was built with a clear vision: bring transparency to the insurance world and elevate parametric solutions to help businesses manage the financial impact of weather events across all industries.
 
 **As climate volatility increases, too many risks remain poorly covered, misunderstood, or excluded.**
@@ -19,7 +21,7 @@ That is what Sereno is built to do.
 
 {% section() %}
 
-## Our values are the cornerstone of our daily mission.
+### Our values are the cornerstone of our daily mission.
 
 {% simple_grid() %}
 
