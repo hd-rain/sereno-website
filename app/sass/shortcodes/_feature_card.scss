@@ -44,6 +44,9 @@
 
   .feature-card-tag-container {
     margin-top: auto;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
 
     .feature-card-tag-title {
       margin-top: $spacing-sm;
@@ -56,10 +59,10 @@
     }
 
     .feature-card-tag {
-      display: inline-flex;
+      align-self: flex-start;
       font-size: $font-size-xxs;
       padding: $spacing-xxs;
-      margin: $spacing-xxs;
+      margin: $spacing-xxs $spacing-sm;
       border: 1px solid $border-light;
       border-radius: $border-radius-md;
       background-color: $background-light;
