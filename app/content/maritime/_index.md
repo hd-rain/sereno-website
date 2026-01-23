@@ -56,9 +56,9 @@ Sereno MGA uses high-resolution data and real operational indices—rather than 
 
 {% simple_column() %}
 {% simple_list() %}
-{{ bullet_card(title="Parametric Precision", subtitle="We define 'adverse weather' based on your specific operational thresholds (e.g., wind speeds above 20 knots or rainfall exceeding 5mm/hr).", icon="crosshair") }}
+{{ bullet_card(title="Parametric Precision", subtitle="We define 'adverse weather' based on your specific operational thresholds (e.g., wind speeds above 20 knots or rainfall exceeding 5mm/hr).", icon="crosshair", variant="brown") }}
 
-{{ bullet_card(title="Automated Triggers", subtitle="When the data shows the threshold was met, the cover is triggered. No lengthy claims adjustment process.", icon="hourglass") }}
+{{ bullet_card(title="Automated Triggers", subtitle="When the data shows the threshold was met, the cover is triggered. No lengthy claims adjustment process.", icon="hourglass", variant="brown") }}
 {% end %}
 
 {% end %}

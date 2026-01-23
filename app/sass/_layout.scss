@@ -44,6 +44,7 @@ h1 {
 
   @media (min-width: $breakpoint-tablet) {
     font-size: $font-size-xxl;
+    margin-bottom: $spacing-md;
   }
 }
 
@@ -56,6 +57,7 @@ h2 {
 
   @media (min-width: $breakpoint-tablet) {
     font-size: $font-size-xl;
+    margin-bottom: $spacing-lg;
   }
 }
 
@@ -65,6 +67,10 @@ h3 {
   line-height: $line-height-heading;
   font-weight: 600;
   margin-bottom: $spacing-sm;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin-bottom: $spacing-md;
+  }
 }
 
 h4 {
@@ -139,8 +145,6 @@ a {
 
 .hero-text {
   h1 {
-    margin-bottom: $spacing-sm;
-
     .hero-line-1 {
       display: block;
       font-weight: 600;
@@ -217,10 +221,16 @@ a {
   margin-top: $spacing-md;
 }
 
-// Page Content
+// Standalone Page Content Overrides
 // ===================================
 .page-content {
   h1 {
     text-align: center;
+  }
+  h3 {
+    font-size: $font-size-lg;
+  }
+  &.page-content h4 {
+    font-size: $font-size-md;
   }
 }

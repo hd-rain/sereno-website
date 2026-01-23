@@ -10,6 +10,10 @@
   &:first-of-type {
     padding-top: 0;
   }
+
+  @media (min-width: $breakpoint-tablet) {
+    padding-bottom: $spacing-lg;
+  }
 }
 
 .section-light {
@@ -20,6 +24,10 @@
   &:last-of-type {
     padding-bottom: 0;
   }
+
+  @media (min-width: $breakpoint-tablet) {
+    padding-bottom: $spacing-lg;
+  }
 }
 
 .section-brown {
@@ -29,5 +37,9 @@
 
   &:last-of-type {
     padding-bottom: 0;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    padding-bottom: $spacing-lg;
   }
 }

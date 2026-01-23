@@ -43,9 +43,9 @@ Modular structures, adjustable limits, and scalable capacity to complement exist
 
 {% simple_column() %}
 {% simple_list() %}
-{{ bullet_card(title="Immediate liquidity", subtitle="Following a qualifying event", icon="clock") }}
-{{ bullet_card(title="Objective triggers", subtitle="No loss adjustment process", icon="dollar") }}
-{{ bullet_card(title="Predictable protection", subtitle="Stabilize cash flowand earnings", icon="chart")}}
+{{ bullet_card(title="Immediate liquidity", subtitle="Following a qualifying event", icon="clock", variant="brown") }}
+{{ bullet_card(title="Objective triggers", subtitle="No loss adjustment process", icon="dollar", variant="brown") }}
+{{ bullet_card(title="Predictable protection", subtitle="Stabilize cash flowand earnings", icon="chart", variant="brown")}}
 {% end %}
 
 When disruption hits, your clients get certainty when it matters most.
