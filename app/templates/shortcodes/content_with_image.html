@@ -1,8 +1,0 @@
-<div class="content-with-image">
-  <div class="content-text">
-    {{ body | markdown | safe }}
-  </div>
-  <div class="content-visual">
-    <img height="500px" src="{{ get_url(path=image) }}" alt="{{ alt | default(value="") }}" class="content-img">
-  </div>
-</div>

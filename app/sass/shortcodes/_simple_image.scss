@@ -2,18 +2,6 @@
 // Content + Image Shortcode
 // ===================================
 
-.content-with-image {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: $spacing-md;
-  align-items: center;
-
-  @media (min-width: $breakpoint-desktop) {
-    grid-template-columns: 2fr 1fr;
-    gap: $spacing-lg;
-  }
-}
-
 // Global content image styling (reusable across shortcodes)
 .content-visual {
   display: flex;

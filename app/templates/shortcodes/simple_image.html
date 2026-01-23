@@ -1,4 +1,4 @@
 <div class="content-visual">
-  <img height=400px src="{{ get_url(path=image) }}" alt="{{ alt | default(value="") }}"
-    class="content-img{% if wide %}-wide{% endif %}">
+  <img loading="lazy" height=400px width={% if wide %}800px{% else %}400px{% endif %} src="{{ get_url(path=image) }}"
+    alt="{{ alt | default(value="") }}" class="content-img{% if wide %}-wide{% endif %}">
 </div>

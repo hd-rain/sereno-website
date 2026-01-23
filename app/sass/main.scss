@@ -16,10 +16,12 @@
 
 // 4. Shortcodes
 @import "shortcodes/sections";
+
 @import "shortcodes/simple_grid";
 @import "shortcodes/simple_list";
 @import "shortcodes/simple_column";
+@import "shortcodes/simple_image";
+
 @import "shortcodes/value_card";
 @import "shortcodes/feature_card";
-@import "shortcodes/content_with_image";
 @import "shortcodes/bullet_card";
