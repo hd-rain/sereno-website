@@ -2,12 +2,12 @@
 
 {% block content %}
 <section class="page-content">
-    <div class="container">
-        {% if page %}
-        {{ page.content | safe }}
-        {% elif section %}
-        {{ section.content | safe }}
-        {% endif %}
-    </div>
+    <!-- <div class="container"> -->
+    {% if page %}
+    {{ page.content | safe }}
+    {% elif section %}
+    {{ section.content | safe }}
+    {% endif %}
+    <!-- </div> -->
 </section>
 {% endblock content %}

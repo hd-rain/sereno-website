@@ -231,7 +231,8 @@
   }
 
   .mobile-nav-home-link {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     padding: $spacing-sm $spacing-md;
     color: $text-darkgray;
     text-decoration: none;

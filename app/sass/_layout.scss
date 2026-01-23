@@ -220,9 +220,7 @@ a {
 // Page Content
 // ===================================
 .page-content {
-  padding: $spacing-md 0;
-
-  @media (min-width: $breakpoint-tablet) {
-    padding: $spacing-lg 0;
+  h1 {
+    text-align: center;
   }
 }
