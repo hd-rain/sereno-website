@@ -19,5 +19,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: $spacing-sm;
-  padding-bottom: $spacing-sm;
+  padding: $spacing-sm 0;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
 }

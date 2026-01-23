@@ -112,7 +112,7 @@ The atmosphere is changing. A warmer climate produces sharper contrasts and more
 
 {% simple_column() %}
 
-{{ simple_image(image="/images/worldmap.webp", alt="The most import maritime ports in the world", wide="true") }}
+{{ simple_image(image="/images/map_maritime_alert.gif", alt="The most import maritime ports in the world", wide="true") }}
 
 {% end %}
 {% end %}
