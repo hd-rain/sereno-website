@@ -12,50 +12,54 @@ hero_sub_heading = "Delays and extra costs caused by adverse weather are a daily
 
 {% section() %}
 
-## A trusted partner for brokers
+## Weather volatility is no longer a nuisance. It is a structural cost.
 
-### Partner with confidence. We make parametric insurance accessible and reliable.
+### _**"Once on demurrage, always on demurrage"**_.
 
-{% simple_grid() %}
+A brutal reality in maritime logistics. A single weather interruption doesn't just pause a clock; it triggers a cascade of delays, vessel queuing, and storage bottlenecks that no spreadsheet can fully anticipate.
 
-{% value_card(title="Solid", subtitle="Strong capacity behind us.", icon="shield") %}
-Robust, transparent, and designed for long‑term reliability. We operate as an MGA with committed, highly rated insurance partners.
+While the industry talks about long-term climate change, we focus on **daily climate volatility**.
+
+{% simple_grid(count="3") %}
+
+{% value_card(title="Wind Bursts", subtitle="", icon="wind") %}
+Sudden wind bursts that force cranes to stop.
 {% end %}
 
-{% value_card(title="Simple", subtitle="Speed without friction.", icon="zap") %}
-Easy to explain, fast to place and ready to deploy. Clear coverage, objective triggers, and automated payouts from quote to settlement.
+{% value_card(title="Heavy Rainfall", subtitle="", icon="rain") %}
+Heavy rainfall that turns bulk cargo into unworkable sludge.
 {% end %}
 
-{% value_card(title="Innovative", subtitle="Unlock uninsured protection gaps.", icon="lightbulb") %}
-Our parametric approach closes previously uninsurable or under‑insured protection gaps with data‑driven precision.
+{% value_card(title="Thunderstorms", subtitle="", icon="zap") %}
+Thunderstorms that freeze operations for safety.
 {% end %}
 
-{% value_card(title="Flexible", subtitle="Adaptive and tailored.", icon="sliders") %}
-Modular structures, adjustable limits, and scalable capacity to complement existing programs and meet real clients needs.
 {% end %}
-{% end %}
+
+These events are brief, but the financial chain reaction is not. **Sereno was built to bridge the gap** between these operational realities and your financial bottom line.
+
 {% end %}
 
 {% section(type="brown") %}
 
 {% simple_grid() %}
 
-{% simple_column(reverse="true") %}
+{% simple_column() %}
 
-## Empower your clients’ financial resilience
+## Precision cover designed for real operational exposure.
 
-### Climate events don't just cause damage. They disrupt revenue, margins, and liquidity. Our parametric solutions complement traditional insurance.
+### Traditional insurance struggles with the "short-and-sharp" nature of maritime delays.
+
+Sereno MGA uses high-resolution data and real operational indices—rather than vague monthly averages—to create a dedicated maritime cover that responds the moment the weather impacts your site.
 
 {% end %}
 
 {% simple_column() %}
 {% simple_list() %}
-{{ bullet_card(title="Immediate liquidity", subtitle="Following a qualifying event", icon="clock") }}
-{{ bullet_card(title="Objective triggers", subtitle="No loss adjustment process", icon="dollar") }}
-{{ bullet_card(title="Predictable protection", subtitle="Stabilize cash flowand earnings", icon="chart")}}
-{% end %}
+{{ bullet_card(title="Parametric Precision", subtitle="We define 'adverse weather' based on your specific operational thresholds (e.g., wind speeds above 20 knots or rainfall exceeding 5mm/hr).", icon="crosshair") }}
 
-When disruption hits, your clients get certainty when it matters most.
+{{ bullet_card(title="Automated Triggers", subtitle="When the data shows the threshold was met, the cover is triggered. No lengthy claims adjustment process.", icon="hourglass") }}
+{% end %}
 
 {% end %}
 {% end %}
@@ -64,26 +68,22 @@ When disruption hits, your clients get certainty when it matters most.
 
 {% section() %}
 
-{% simple_grid() %}
+## Where we provide the most value
 
-{% simple_column() %}
+### Tailored parametric solutions for every player in the maritime logistics chain.
 
-## Unique weather data expertise
+{% simple_grid(count="3") %}
 
-### Reducing basis risk with superior data and proven expertise.
-
-{% simple_list() %}
-{{ bullet_card(title="Climate-adjusted models", subtitle="Proprietary algorithms that account for climate change trends", icon="satellite", variant="light") }}
-{{ bullet_card(title="Multi-source data fusion", subtitle="Satellite imagery, radar, and IoT sensors for precise location risk", icon="radar", variant="light") }}
-{{ bullet_card(title="Team of weather experts", subtitle="Policies designed and validated by meteorologists and climate scientists", icon="researcher", variant="light") }}
-{% end %}
-The gap between "weather at the station" and "weather at your site" costs you money. We close that gap.
-
+{% feature_card(title="Port & Terminal Operators", subtitle="", icon="building", tags=["Crane downtime protection", "Berth congestion cover", "Weather pattern monitoring"]) %}
+Protect your margins against crane downtime and berth congestion caused by convective weather patterns and wind shear.
 {% end %}
 
-{% simple_column() %}
+{% feature_card(title="Shipping Lines & Charterers", subtitle="", icon="ship", tags=["Demurrage cost offset", "Queue delay coverage", "Standing cost protection"]) %}
+Mitigate the financial sting of weather-driven demurrage. When a vessel is stuck in the queue due to a port closure, Sereno provides the liquidity to cover the daily standing costs.
+{% end %}
 
-{{ simple_image(image="/images/weather.webp", alt="Weather data experts working on meteorological analysis") }}
+{% feature_card(title="Bulk Handlers", subtitle="", icon="package", tags=["Cargo contamination cover", "Loading delay protection", "Discharge interruption"]) %}
+Manage the risk of "sludge" or cargo contamination. If sudden heavy rain stops loading/discharging, our cover compensates for the resulting operational delays.
 
 {% end %}
 {% end %}
@@ -91,25 +91,30 @@ The gap between "weather at the station" and "weather at your site" costs you mo
 
 {% section(type="light") %}
 
-## Tech add value for your customers
+## From Abidjan to Antwerp: High-resolution protection.
 
-### More than policies—a complete platform to monitor your clients' exposure.
+The atmosphere is changing. A warmer climate produces sharper contrasts and more frequent "micro-events" that tilt operations into demurrage cycles. Sereno leverages global weather data integrated with your specific port coordinates.
 
-{{ simple_image(image="/images/monitoring.webp", alt="Weather data experts working on meteorological analysis", wide="true") }}
+{% simple_grid(count="1-2") %}
 
-{% simple_row() %}
+{% simple_column() %}
 
-{% feature_card(title="Portfolio‑level monitoring", subtitle="See the bigger picture.", icon="activity") %}
-The platform gives you a clear view across your portfolio. You gain visibility to support better advice, stronger renewals, and more strategic conversations.
-{% end %}
+### We don't just insure your assets; we insure your time.
 
-{% feature_card(title="Client‑specific triggers", subtitle="No generic assumptions.", icon="bell") %}
-Triggers are designed using your clients’ own exposure data. This precision reduces basis risk and builds trust.
-{% end %}
-
-{% feature_card(title="Proactive alerts for your clients", subtitle="Stay ahead of climate events.", icon="target") %}
-We monitor weather conditions in real time and send alerts. You can inform your clients early and act before impacts materialize.
+{% simple_grid() %}
+{{ bullet_card(title="180+", subtitle="Ports covered worldwide", icon="globe", variant="light") }}
+{{ bullet_card(title="60min", subtitle="Data resolution", icon="clock-1", variant="light") }}
+{{ bullet_card(title="Custom", subtitle="Port coordinates", icon="map-pin", variant="light") }}
+{{ bullet_card(title="10+ years", subtitle="Historical data", icon="database", variant="light") }}
 {% end %}
 
 {% end %}
+
+{% simple_column() %}
+
+{{ simple_image(image="/images/worldmap.webp", alt="The most import maritime ports in the world", wide="true") }}
+
+{% end %}
+{% end %}
+
 {% end %}

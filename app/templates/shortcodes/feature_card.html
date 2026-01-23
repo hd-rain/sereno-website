@@ -7,4 +7,11 @@
   </h4>
   <p class="feature-card-subtitle">{{ subtitle }}</p>
   <p>{{ body }}</p>
+
+  {% if tags | length %}
+  <div class="feature-card-tag-container">
+    <p class="feature-card-tag-title">Coverage Includes</p>
+    {% for tag in tags %}<span class="feature-card-tag">{{ tag }}</span>{% endfor %}
+  </div>
+  {% endif %}
 </div>

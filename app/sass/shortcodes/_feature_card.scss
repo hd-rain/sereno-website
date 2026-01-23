@@ -3,6 +3,8 @@
 // ===================================
 
 .feature-card {
+  display: flex;
+  flex-direction: column;
   color: $primary-brown;
   background: $background-white;
   border: 1px solid $border-light;
@@ -48,14 +50,34 @@
 
   .feature-card-subtitle {
     font-style: italic;
+    font-size: $font-size-sm;
   }
 
-  ul {
-    list-style-position: inside;
-    margin-bottom: $spacing-sm;
+  p {
+    font-size: $font-size-xs;
+  }
 
-    &:last-child {
-      margin-bottom: 0;
+  .feature-card-tag-container {
+    margin-top: auto;
+
+    .feature-card-tag-title {
+      margin-top: $spacing-sm;
+      border-top: 1px solid $border-light;
+      padding-top: $spacing-sm;
+      font-size: $font-size-xxs;
+      text-transform: uppercase;
+      color: $text-darkgray;
+      font-weight: 600;
+    }
+
+    .feature-card-tag {
+      display: inline-flex;
+      font-size: $font-size-xxs;
+      padding: $spacing-xxs;
+      margin: $spacing-xxs;
+      border: 1px solid $border-light;
+      border-radius: $border-radius-md;
+      background-color: $background-light;
     }
   }
 
@@ -63,9 +85,5 @@
     &:hover {
       transform: none;
     }
-  }
-
-  @media (min-width: $breakpoint-tablet) {
-    width: 33%;
   }
 }

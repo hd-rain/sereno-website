@@ -48,5 +48,10 @@
 
   .value-card-subtitle {
     font-style: italic;
+    font-size: $font-size-sm;
+  }
+
+  p {
+    font-size: $font-size-xs;
   }
 }

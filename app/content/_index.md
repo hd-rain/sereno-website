@@ -33,7 +33,7 @@ Modular structures, adjustable limits, and scalable capacity to complement exist
 
 {% simple_grid() %}
 
-{% simple_column(reverse="true") %}
+{% simple_column() %}
 
 ## Empower your clients’ financial resilience
 
@@ -57,13 +57,13 @@ When disruption hits, your clients get certainty when it matters most.
 
 {% section() %}
 
-{% simple_grid() %}
-
-{% simple_column() %}
-
 ## Unique weather data expertise
 
 ### Reducing basis risk with superior data and proven expertise.
+
+{% simple_grid() %}
+
+{% simple_column() %}
 
 {% simple_list() %}
 {{ bullet_card(title="Climate-adjusted models", subtitle="Proprietary algorithms that account for climate change trends", icon="satellite", variant="light") }}
@@ -90,7 +90,7 @@ The gap between "weather at the station" and "weather at your site" costs you mo
 
 {{ simple_image(image="/images/monitoring.webp", alt="Weather data experts working on meteorological analysis", wide="true") }}
 
-{% simple_row() %}
+{% simple_grid(count="3") %}
 
 {% feature_card(title="Portfolio‑level monitoring", subtitle="See the bigger picture.", icon="activity") %}
 The platform gives you a clear view across your portfolio. You gain visibility to support better advice, stronger renewals, and more strategic conversations.
