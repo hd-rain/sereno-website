@@ -5,33 +5,108 @@
 .footer {
   background-color: $background-light;
   border-top: 1px solid $border-light;
-  padding: $spacing-md 0;
+  padding: $spacing-lg 0;
   margin-top: auto;
+  font-size: $font-size-xs;
+}
 
-  .container {
-    text-align: center;
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-md;
+  text-align: center;
+
+  @media (min-width: $breakpoint-tablet) {
+    grid-template-columns: 1fr auto;
+    align-items: start;
+    text-align: left;
   }
 }
 
-.footer-line {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: $spacing-xs;
-  font-size: $font-size-xs;
-  .separator {
-    display: none;
+.footer-brand {
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: $spacing-xs;
+    justify-content: center;
+    margin-bottom: $spacing-sm;
+
+    @media (min-width: $breakpoint-tablet) {
+      justify-content: flex-start;
+    }
   }
-  @media (min-width: $breakpoint-tablet) {
-    flex-direction: row;
-    .separator {
-      display: block;
+
+  .footer-logo-text {
+    font-size: $font-size-sm;
+    font-weight: 500;
+    color: $primary-brown;
+  }
+
+  .footer-description {
+    font-size: $font-size-xs;
+    color: $primary-brown;
+    margin: 0;
+    max-width: 300px;
+    font-style: italic;
+
+    @media (min-width: $breakpoint-tablet) {
+      max-width: 250px;
     }
   }
 }
 
-.separator {
-  user-select: none;
+.footer-copyright {
+  font-size: $font-size-xs;
+  color: $text-darkgray;
+  order: 3;
+
+  @media (min-width: $breakpoint-tablet) {
+    order: 0;
+    text-align: center;
+  }
+}
+
+.footer-links {
+  font-size: $font-size-xxs;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+  align-items: center;
+
+  @media (min-width: $breakpoint-tablet) {
+    align-items: flex-end;
+  }
+}
+
+.footer-social {
+  display: flex;
+  gap: $spacing-sm;
+  align-items: center;
+}
+
+.footer-legal {
+  display: flex;
+  gap: $spacing-sm;
+  font-size: $font-size-xxs;
+}
+
+.footer-link {
+  color: $text-darkgray;
+  text-decoration: underline;
+  transition: color $transition-fast;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: $primary-brown;
+  }
+
+  img {
+    filter: opacity(0.7);
+    transition: filter $transition-fast;
+  }
+
+  &:hover img {
+    filter: opacity(1);
+  }
 }

@@ -1,0 +1,16 @@
+.only-rain-here {
+  display: flex;
+  gap: $spacing-sm;
+  justify-content: center;
+  align-items: center;
+}
+
+.go-back-home {
+  background: linear-gradient(135deg, $primary-brown 0%, $highlight-brown 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  transition: background 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  text-decoration: underline;
+}

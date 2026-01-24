@@ -12,11 +12,11 @@
     <meta name="author" content="{{ config.extra.author }}">
     <meta name="keywords" content="{{ config.extra.keywords }}">
 
-    <link rel="canonical" href="{{ current_url | safe }}">
+    <link rel="canonical" href="{% if current_url %}{{ current_url | safe }}{% else %}{{ config.base_url }}{% endif %}">
 
     <!-- Open Graph Tags -->
     <meta property="og:type" content="{% block og_type %}website{% endblock %}">
-    <meta property="og:url" content="{{ current_url | safe }}">
+    <meta property="og:url" content="{% if current_url %}{{ current_url | safe }}{% else %}{{ config.base_url }}{% endif %}">
     <meta property="og:title"
         content="{% block og_title %}{% if page.title %}{{ page.title }}{% else %}{{ config.title }}{% endif %}{% endblock %}">
     <meta property="og:site_name" content="{% if page.title %}{{ page.title }}{% else %}{{ config.title }}{% endif %}">

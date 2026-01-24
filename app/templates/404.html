@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="attention">
+    <div class="container">
+        <h1 class="only-rain-here">Oops, 404!<img src="{{ get_url(path='images/rain.svg') }}" alt="rain icon" width="32"
+                height="32"></h1>
+
+        <p>If you've lost your way in a storm, serenity awaits here: <a class="go-back-home" href="/">go back
+                home.</a>
+        </p>
+
+    </div>
+</section>
+{% endblock content %}
