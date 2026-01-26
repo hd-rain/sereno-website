@@ -45,9 +45,9 @@ Our parametric solutions complement traditional insurance.
 
 {% simple_column() %}
 {% simple_list() %}
-{{ bullet_card(title="Immediate liquidity", subtitle="Following a qualifying event", icon="clock", variant="brown") }}
-{{ bullet_card(title="Objective triggers", subtitle="No loss adjustment process", icon="dollar", variant="brown") }}
-{{ bullet_card(title="Predictable protection", subtitle="Stabilize cash flowand earnings", icon="chart", variant="brown")}}
+{{ bullet_card(title="Immediate Liquidity", subtitle="Following a qualifying event", icon="clock", variant="brown") }}
+{{ bullet_card(title="Objective Triggers", subtitle="No loss adjustment process", icon="dollar", variant="brown") }}
+{{ bullet_card(title="Predictable Protection", subtitle="Stabilize cash flowand earnings", icon="chart", variant="brown")}}
 {% end %}
 
 When disruption hits, your clients get certainty when it matters most.
@@ -68,9 +68,9 @@ When disruption hits, your clients get certainty when it matters most.
 {% simple_column() %}
 
 {% simple_list() %}
-{{ bullet_card(title="Climate-adjusted models", subtitle="Proprietary algorithms that account for climate change trends", icon="satellite", variant="light") }}
-{{ bullet_card(title="Multi-source data fusion", subtitle="Satellite imagery, radar, and IoT sensors for precise location risk", icon="radar", variant="light") }}
-{{ bullet_card(title="Team of weather experts", subtitle="Policies designed and validated by meteorologists and climate scientists", icon="researcher", variant="light") }}
+{{ bullet_card(title="Climate-Adjusted Models", subtitle="Proprietary algorithms that account for climate change trends", icon="satellite", variant="light") }}
+{{ bullet_card(title="Multi-Source Data Fusion", subtitle="Satellite imagery, radar, and IoT sensors for precise location risk", icon="radar", variant="light") }}
+{{ bullet_card(title="Team of Weather Experts", subtitle="Policies designed and validated by meteorologists and climate scientists", icon="researcher", variant="light") }}
 {% end %}
 The gap between "weather at the station" and "weather at your site" costs you money. We close that gap.
 
@@ -96,15 +96,15 @@ The gap between "weather at the station" and "weather at your site" costs you mo
 
 {% simple_grid(count="3") %}
 
-{% feature_card(title="Portfolio‑level monitoring", subtitle="See the bigger picture.", icon="activity") %}
+{% feature_card(title="Portfolio‑Level Monitoring", subtitle="See the bigger picture.", icon="activity") %}
 The platform gives you a clear view across your portfolio. You gain visibility to support better advice, stronger renewals, and more strategic conversations.
 {% end %}
 
-{% feature_card(title="Client‑specific triggers", subtitle="No generic assumptions.", icon="bell") %}
+{% feature_card(title="Client‑Specific Triggers", subtitle="No generic assumptions.", icon="bell") %}
 Triggers are designed using your clients’ own exposure data. This precision reduces basis risk and builds trust.
 {% end %}
 
-{% feature_card(title="Proactive alerts for your clients", subtitle="Stay ahead of climate events.", icon="target") %}
+{% feature_card(title="Proactive Alerts for Your Clients", subtitle="Stay ahead of climate events.", icon="target") %}
 We monitor weather conditions in real time and send alerts. You can inform your clients early and act before impacts materialize.
 {% end %}
 
