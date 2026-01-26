@@ -42,6 +42,20 @@
     font-size: $font-size-xs;
   }
 
+  ul {
+    list-style-type: none;
+  }
+
+  .feature-card-bullet-list {
+    .feature-card-bullet-item {
+      display: flex;
+      gap: $spacing-sm;
+      align-items: center;
+      padding: $spacing-xxs 0;
+      font-size: $font-size-xs;
+    }
+  }
+
   .feature-card-tag-container {
     margin-top: auto;
     flex-shrink: 0;
@@ -66,6 +80,28 @@
       border: 1px solid $border-light;
       border-radius: $border-radius-md;
       background-color: $background-light;
+    }
+  }
+
+  .feature-card-trigger-container {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+
+    .feature-card-trigger-title {
+      margin-top: $spacing-sm;
+      border-top: 1px solid $border-light;
+      padding-top: $spacing-sm;
+      font-size: $font-size-xxs;
+      text-transform: uppercase;
+      color: $text-darkgray;
+      font-weight: 600;
+    }
+
+    .feature-card-trigger {
+      font-size: $font-size-xs;
+      padding: 0 $spacing-xs;
+      min-height: 80px;
     }
   }
 

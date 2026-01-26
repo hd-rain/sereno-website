@@ -74,7 +74,7 @@ Sereno MGA uses high-resolution data and real operational indices—rather than 
 
 {% simple_grid(count="3") %}
 
-{% feature_card(title="Port & Terminal Operators", subtitle="", icon="building", tags=["Crane downtime protection", "Berth congestion cover", "Weather pattern monitoring"]) %}
+{% feature_card(title="Port & Terminal Operators", subtitle="", icon="building-2", tags=["Crane downtime protection", "Berth congestion cover", "Weather pattern monitoring"]) %}
 Protect your margins against crane downtime and berth congestion caused by convective weather patterns and wind shear.
 {% end %}
 
@@ -102,10 +102,10 @@ The atmosphere is changing. A warmer climate produces sharper contrasts and more
 ### We don't just insure your assets; we insure your time.
 
 {% simple_list(count="2") %}
-{{ bullet_card(title="180+", subtitle="Ports covered worldwide", icon="globe", variant="light") }}
-{{ bullet_card(title="60min", subtitle="Data resolution", icon="clock-1", variant="light") }}
-{{ bullet_card(title="Custom", subtitle="Port coordinates", icon="map-pin", variant="light") }}
-{{ bullet_card(title="10+ years", subtitle="Historical data", icon="database", variant="light") }}
+{{ bullet_card(title="180+", subtitle="Ports covered worldwide", icon="globe", variant="white") }}
+{{ bullet_card(title="60min", subtitle="Data resolution", icon="clock-1", variant="white") }}
+{{ bullet_card(title="Custom", subtitle="Port coordinates", icon="map-pin", variant="white") }}
+{{ bullet_card(title="10+ years", subtitle="Historical data", icon="database", variant="white") }}
 {% end %}
 
 {% end %}

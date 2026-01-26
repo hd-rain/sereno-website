@@ -8,10 +8,24 @@
   <p class="feature-card-subtitle">{{ subtitle }}</p>
   <p>{{ body }}</p>
 
+  {% if bullets | length %}
+  <ul class="feature-card-bullet-list">
+    {% for bullet in bullets %}<li class="feature-card-bullet-item"><img src="{{ get_url(path='images/check.svg') }}"
+        alt="{{ title }}" width="16" height="16">{{ bullet }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+
   {% if tags | length %}
   <div class="feature-card-tag-container">
     <p class="feature-card-tag-title">Coverage Includes</p>
     {% for tag in tags %}<span class="feature-card-tag">{{ tag }}</span>{% endfor %}
+  </div>
+  {% endif %}
+
+  {% if triggers | length %}
+  <div class="feature-card-trigger-container">
+    <p class="feature-card-trigger-title">Technical Trigger</p>
+    {% for trigger in triggers %}<p class="feature-card-trigger">{{ trigger }}</p>{% endfor %}
   </div>
   {% endif %}
 </div>

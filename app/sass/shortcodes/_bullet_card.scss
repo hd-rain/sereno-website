@@ -54,4 +54,22 @@
       }
     }
   }
+
+  &--white {
+    background: $background-white;
+    border: 1px solid $border-light;
+
+    .bullet-card-content {
+      color: $primary-brown;
+
+      h4 {
+        color: $primary-brown;
+      }
+
+      p {
+        color: $primary-brown;
+        font-size: $font-size-xs;
+      }
+    }
+  }
 }

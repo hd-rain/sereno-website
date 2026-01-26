@@ -12,28 +12,45 @@ hero_sub_heading = "Interruptions is a structural challenge across the construct
 
 {% section() %}
 
-## A trusted partner for brokers
+## Turn weather-driven loss of workable days into measurable protection and fast liquidity.
 
-### Partner with confidence. We make parametric insurance accessible and reliable.
+### Weather volatility creates non-workable days and financial loss. Measured, indexed, and paid when thresholds are exceeded.
+
+{% simple_grid(count="3") %}
+
+{% value_card(title="+5% to 15%", subtitle="", icon="trending-up") %}
+Increase in total project costs linked to weather stoppages, depending on the stage of works.
+{% end %}
+
+{% value_card(title="15% to 40%", subtitle="", icon="thermometer-sun") %}
+Reduction in worker productivity during heatwaves and extreme temperatures, impacting timelines and costs.
+{% end %}
+
+{% value_card(title="45% of Projects", subtitle="", icon="warning") %}
+Construction projects globally are affected by weather disruptions that reduce workable days.
+{% end %}
+
+{% end %}
+{% end %}
+
+{% section(type="light") %}
+
+## Two targets. One common problem. One objective index.
 
 {% simple_grid() %}
 
-{% value_card(title="Solid", subtitle="Strong capacity behind us.", icon="shield") %}
-Robust, transparent, and designed for long‑term reliability. We operate as an MGA with committed, highly rated insurance partners.
+{% feature_card(title="Large Projects", subtitle="Project owners & contractors.", icon="building", triggers=["Payout triggers when the number of days above or below agreed thresholds at the project POI exceeds the predefined deductible."], bullets=["Wind thresholds preventing crane lifts.","Rain thresholds preventing concrete pours.","Temperature thresholds preventing works."]) %}
+Covers financial loss linked exclusively to weather-driven non-workable days, as measured by an objective meteorological index at the project point of interest.
+
 {% end %}
 
-{% value_card(title="Simple", subtitle="Speed without friction.", icon="zap") %}
-Easy to explain, fast to place and ready to deploy. Clear coverage, objective triggers, and automated payouts from quote to settlement.
+{% feature_card(title="Equipment Rental", subtitle="Construction equipment rental operators.", icon="target", triggers=["Payout triggers when the annual number of adverse weather days exceeds the predefined deductible, with transparent per-day compensation beyond it."], bullets=["Multi-station daily index using N reference stations and M-trigger logic designed to reflect operational exposure.","Daily allowance paid per adverse weather day beyond the deductible.","Optional exclusion of specific non-working periods depending on the insured activity."]) %}
+Protects against periods of non-use caused by adverse weather, measured through an objective daily index over a defined geographical area.
+
 {% end %}
 
-{% value_card(title="Innovative", subtitle="Unlock uninsured protection gaps.", icon="lightbulb") %}
-Our parametric approach closes previously uninsurable or under‑insured protection gaps with data‑driven precision.
 {% end %}
 
-{% value_card(title="Flexible", subtitle="Adaptive and tailored.", icon="sliders") %}
-Modular structures, adjustable limits, and scalable capacity to complement existing programs and meet real clients needs.
-{% end %}
-{% end %}
 {% end %}
 
 {% section(type="brown") %}
@@ -42,76 +59,23 @@ Modular structures, adjustable limits, and scalable capacity to complement exist
 
 {% simple_column() %}
 
-## Empower your clients’ financial resilience
+## Essential, Enhanced, or Elite coverage.
 
-### Climate events don't just cause damage. They disrupt revenue, margins, and liquidity.
-
-Our parametric solutions complement traditional insurance.
-
-{% end %}
-
-{% simple_column() %}
-{% simple_list() %}
-{{ bullet_card(title="Immediate Liquidity", subtitle="Following a qualifying event", icon="clock", variant="brown") }}
-{{ bullet_card(title="Objective Triggers", subtitle="No loss adjustment process", icon="dollar", variant="brown") }}
-{{ bullet_card(title="Predictable Protection", subtitle="Stabilize cash flowand earnings", icon="chart", variant="brown")}}
-{% end %}
-
-When disruption hits, your clients get certainty when it matters most.
-
-{% end %}
-{% end %}
-
-{% end %}
-
-{% section() %}
-
-## Unique weather data expertise
-
-### Reducing basis risk with superior data and proven expertise.
+### Three predefined deductible structures translating different weather risk tolerances into transparent parametric coverage. Liquidity is paid after the agreed number of lost days is exceeded.
 
 {% simple_grid() %}
-
-{% simple_column() %}
-
-{% simple_list() %}
-{{ bullet_card(title="Climate-Adjusted Models", subtitle="Proprietary algorithms that account for climate change trends", icon="satellite", variant="light") }}
-{{ bullet_card(title="Multi-Source Data Fusion", subtitle="Satellite imagery, radar, and IoT sensors for precise location risk", icon="radar", variant="light") }}
-{{ bullet_card(title="Team of Weather Experts", subtitle="Policies designed and validated by meteorologists and climate scientists", icon="researcher", variant="light") }}
+{{ bullet_card(title="€1M to €3M", subtitle="Typical annual cap", icon="dollar") }}
+{{ bullet_card(title="24h - 96h", subtitle="Fast liquidity payout target", icon="zap-light") }}
 {% end %}
-The gap between "weather at the station" and "weather at your site" costs you money. We close that gap.
+
+Objective meteorological index based on your **location**.
 
 {% end %}
 
 {% simple_column() %}
 
-{{ simple_image(image="/images/weather.webp", alt="Weather data experts working on meteorological analysis") }}
+{{ simple_image(image="/images/workers.webp", wide="true", alt="Construction workers on a building site") }}
 
 {% end %}
-{% end %}
-{% end %}
-
-{% section(type="light") %}
-
-## Tech add value for your customers
-
-### More than policies—a complete platform to monitor your clients' exposure.
-
-{{ simple_image(image="/images/monitoring.webp", alt="Weather data experts working on meteorological analysis", wide="true") }}
-
-{% simple_grid(count="3") %}
-
-{% feature_card(title="Portfolio‑Level Monitoring", subtitle="See the bigger picture.", icon="activity") %}
-The platform gives you a clear view across your portfolio. You gain visibility to support better advice, stronger renewals, and more strategic conversations.
-{% end %}
-
-{% feature_card(title="Client‑Specific Triggers", subtitle="No generic assumptions.", icon="bell") %}
-Triggers are designed using your clients’ own exposure data. This precision reduces basis risk and builds trust.
-{% end %}
-
-{% feature_card(title="Proactive Alerts for Your Clients", subtitle="Stay ahead of climate events.", icon="target") %}
-We monitor weather conditions in real time and send alerts. You can inform your clients early and act before impacts materialize.
-{% end %}
-
 {% end %}
 {% end %}
